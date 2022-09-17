@@ -8,6 +8,58 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://kit.fontawesome.com/69212664e8.js" crossorigin="anonymous"></script>
+
+    <style>
+
+      *{
+        margin: opx;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .search-button{
+        margin-top: 20px;
+        padding-top: 6px;
+      }
+
+      .second-section{
+        background-image: url(/images/poultry6.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 40vh;
+      }
+      .second-section .looking-for{
+        text-align: center;
+        color: #fff;
+        line-height: 5px;
+      }
+
+      .looking-for{
+        padding-top: 15px;
+      }
+
+      .masajja{
+        color:#16dd12 ;
+        font-weight: bold;
+       
+      }
+
+      .third-section{
+        padding-top: 6px;
+      }
+      
+      .marquee{
+        color: #fff;
+        font-size: 26px;
+        background-image: url(/images/poultry5.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        
+      }
+    </style>
 </head>
 <body>
     
@@ -61,19 +113,112 @@
       </nav>
 
       <div class="second-section">
+        <div class="looking-for">
+          <h3>Find anything in <span class="masajja">Masajja</span></h3>
+        </div>
         <div class="container">
           <div class="row">
             <div class="col">
               
             </div>
-            <div class="col">
-              
+
+            <!-- search button -->
+            <div class="col search-button">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="am looking for" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">
+                  <img src="/images/magnifying-glass-solid.svg" alt="" style="height: 20px; width: 20px;">
+                </button>
+              </form>
             </div>
+
             <div class="col">
               
             </div>
           </div>
           
+        </div>
+      </div>
+      
+      <div class="third-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+
+              <!-- carouse -->
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/p35.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/p37.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/p36.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col myMarquee">
+              <div class="card">
+                <div class="card-header">
+                  <marquee width="100%" direction="left" height="80px" class="marquee">
+                    UFarm a place for all farmers.
+                    </marquee>
+                </div>
+                <div class="card-body">
+                  <h2 class="card-text">How to buy on UFarm.</h2>
+                  <a href="how-to-buy.html" class="btn btn-primary">Click here</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <!-- second carouse -->
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/p21.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/p19.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/p17.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fouth section -->
+      <div class="fouth-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+
+            </div>
+          </div>
         </div>
       </div>
     <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
