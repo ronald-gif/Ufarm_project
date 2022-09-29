@@ -9,65 +9,11 @@
     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="/styles/main.css">
     <script src="https://kit.fontawesome.com/69212664e8.js" crossorigin="anonymous"></script>
-
-    <style>
-
-      *{
-        margin: opx;
-        padding: 0px;
-        box-sizing: border-box;
-      }
-      .search-button{
-        margin-top: 20px;
-        padding-top: 6px;
-      }
-
-      .second-section{
-        background-image: url(/images/poultry6.jpg);
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 40vh;
-      }
-
-     
-      .second-section .looking-for{
-        text-align: center;
-        color: #fff;
-        line-height: 5px;
-        z-index: 999;
-      }
-
-      .looking-for{
-        padding-top: 15px;
-      }
-
-      .masajja{
-        color:#16dd12 ;
-        font-weight: bold;
-       
-      }
-
-      .third-section{
-        padding-top: 6px 0px;
-
-      }
-      
-      .marquee{
-        color: #fff;
-        font-size: 26px;
-        background-image: url(/images/poultry5.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        object-fit: cover;
-        
-      }
-    </style>
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg first-nav">
+  <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html#">
             <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
@@ -79,71 +25,114 @@
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="AO.html">Agriculture Officer</a>
+                <a class="nav-link active" aria-current="page" href="/index.html" style="color: #fff;">Home</a>
               </li>
-            </ul>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about-us.html"  style="color: #fff;">About us</a>
+              </li>
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Register As
+                  Categories
                 </a>
                 <ul class="dropdown-menu">
-                  
-                  <li><a class="dropdown-item" href="fo_form.html">Farmer One</a></li>
-                  <li><a class="dropdown-item" href="urban_farmer_form.html">Urban Farmer</a></li>
+                  <li><a class="dropdown-item" href="/horticulture.html">Horticuture</a></li>
+                  <li><a class="dropdown-item" href="/poultry.html">Poultry</a></li>
+                  <li><a class="dropdown-item" href="/dairy.html">Dairy</a></li>
                 </ul>
               </li>
             </ul>
 
-            <form class="d-flex" role="search">
+            <!-- modal sign up -->
+            <div class="buttonlogin">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                Log in
+              </button>
+            <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="myform bg-dark">
+                            <h1 class="text-center">Login Form</h1>
+                            <form>
+                                <div class="mb-3 mt-4">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                                <p>Not a member? <a href="#">Signup now</a></p>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            
+          <!--second modal sign up -->
+            <div class="buttonSign">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                Sign up
+              </button>
+            <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="myform bg-dark">
+                            <h1 class="text-center">Login Form</h1>
+                            <form>
+                                <div class="mb-3 mt-4">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                                <p>Not a member? <a href="#">Signup now</a></p>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        
               
-
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Account
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">login</a></li>
-                    <li><a class="dropdown-item" href="#">Sign in</a></li>
-                    <!-- <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                  </ul>
-                </li>
-              </ul>
-            </form>
           </div>
         </div>
       </nav>
 
+      <!-- SECOND SECTION -->
       <div class="second-section">
         <div class="looking-for">
           <h3>Find anything in <span class="masajja">Masajja</span></h3>
         </div>
-        <div class="container">
+        <div class="container-fluid text-center">
           <div class="row">
             <div class="col">
               
             </div>
-
-            <!-- search button -->
-            <div class="col search-button">
+            <div class="col">
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="am looking for" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">
-                  <img src="/images/magnifying-glass-solid.svg" alt="" style="height: 20px; width: 20px;">
-                </button>
+                <input class="form-control" type="search" placeholder="am looking for" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
             </div>
-
             <div class="col">
               
             </div>
           </div>
-          
         </div>
-      </div>
+       </div>
+    
       
       <!-- third section -->
       <div class="third-section">
@@ -161,7 +150,7 @@
                     <img src="/images/p37.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/images/p36.jpg" class="d-block w-100" alt="...">
+                    <img src="/images/h28.jpg" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -219,14 +208,163 @@
 
       <!-- fouth section -->
       <div class="fouth-section">
-        <div class="container">
+        <h3>Top selling products</h3>
+        <div class="container-fluid sellingItems">
           <div class="row">
             <div class="col">
-              POULTRY
+              
+              <div class="top-selling">
+                <div class="card mycard" style="width: 15rem;">
+                  <img src="/images/p17.jpg" class="card-img-top" alt="pigeon">
+                  <div class="card-body mybody">
+                    <p class="card-text">pigeon</p>
+                    <h6>UGX 25000</h6>
+                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              
+              <div class="top-selling">
+                
+                <div class="card mycard" style="width: 15rem;">
+                  <img src="/images/p19.jpg" class="card-img-top" alt="...">
+                  <div class="card-body mybody">
+                    <p class="card-text">Duck</p>
+                    <h6>UGX 40000</h6>
+                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              
+              <div class="top-selling">
+                
+                <div class="card mycard" style="width: 15rem;">
+                  <img src="/images/h31.jpg" class="card-img-top" alt="...">
+                  <div class="card-body mybody">
+                    <p class="card-text">Brazilian flowers</p>
+                    <h6>UGX 100000</h6>
+                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              
+              <div class="top-selling">
+                
+                <div class="card mycard" style="width: 15rem;">
+                  <a href="">
+                    <img src="/images/p29.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
+                  <div class="card-body mybody">
+                    <p class="card-text">Eggs</p>
+                    <h6>UGX 500</h6>
+                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
+
+      
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+
+          <div class="logo">
+            <a class="navbar-brand" href="index.html#">
+              <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
+            </a>
+          </div>
+
+          <div class="payment-method">
+            <h5>Payment methods</h5>
+            <ul>
+              <li>
+                
+                  <a href="">
+                    <img src="/images/Payment_-_Airtel-02.png" alt="">
+                  
+                </a>
+              </li>
+              <li>
+                
+                  <a href="" >
+                    <img src="/images/mtn.png" alt="">
+                  </a>
+                
+              </li>
+              <li>
+                
+                  <a href="" >
+                    <img src="/images/money.jpg" alt="">
+                  </a>
+                
+              </li>
+            </ul>
+          </div>
+
+          <div class="follow-us">
+            <h5>Stay with us on</h5>
+            <ul>
+              <li>
+                <a href="">
+                
+                <img src="/images/facebook.svg" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="">
+              <img src="/images/twitter.svg" alt="twitter">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="/images/square-instagram.svg" alt="square-instagram">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="/images/envelope-solid.svg" alt="email ">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="support">
+            <h5>Support</h5>
+            <ul>
+              <li>
+                <a href="">Contact us</a>
+              </li>
+              <li>
+                <a href="">Help</a>
+              </li>
+              <li>
+                <a href="">Terms and condition</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <article>&copycopyright All rights reserved</article>
+        </div>
+      </footer>
     <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

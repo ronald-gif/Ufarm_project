@@ -1,0 +1,27 @@
+
+body{
+    background-color: rgb(245, 238, 238);
+}
+.farmer_one{
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 10px 2px 12px 2px #fff;
+   }
+
+   .select{
+    padding: 20px 0px;
+   }
+
+   .values-for-wards{
+    padding: 5px 60px;
+   }
+   .form-label::after{
+    content: "*";
+   }
+   .farmer_one h5{
+    text-align: center;
+    border-bottom: 1px solid gray;
+
+   }
+
+   

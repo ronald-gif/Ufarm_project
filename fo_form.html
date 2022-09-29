@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css">
-    <style>
-      .farmer_one{
-       border: 1px solid grey;
-       border-radius: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="/styles/form.css">
 </head>
 <body>
   <li><a href="index.html">home</a></li>
@@ -23,16 +18,17 @@
           </div>
 
           <!-- for for farmer one -->
-          <div class="col farmer_one">
+          <div class="col  farmer_one">
             <form>
+              <h5>All fields are required</h4>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <label for="exampleInputEmail1" class="form-label">Name</label> 
                 <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
       
                 <div class="select">
                   <label for="ward">Ward</label>
-              <select name="ward" id="my_ward">
+              <select name="ward" id="my_ward" class="values-for-wards">
                 <option value="ward1">LC1</option>
                 <option value="ward2">LC2</option>
                 <option value="ward3">LC3</option>
@@ -52,7 +48,7 @@
       
                 <div class="select">
                 <label for="ward">Gender</label>
-              <select name="ward" id="my_ward">
+              <select name="ward" id="my_ward" class="values-for-wards">
                 <option value="ward1">Male</option>
                 <option value="ward2">Female</option>
               </select>

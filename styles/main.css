@@ -1,4 +1,15 @@
-.navbar{
+*{
+    margin: opx;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .navbar-nav li a{
+    color: #fff;
+  }
+
+
+  .navbar{
     background-color:#3db83a ;
     color: #fff;
 }
@@ -6,4 +17,300 @@
 .navbar .navbar-nav li a{
     color: #fff;
     background-color:#3db83a ;
+}
+
+  .buttonlogin{
+    padding: 10px;
+  }
+
+  .btn{
+    color: #fff;
+    background-color: #16dd12;
+    border: 1px solid #16dd12;
+    border-radius: 15%;
+  }
+
+  .btn:hover{
+    background-color: rgb(2, 20, 20);
+    border: 1px solid #000;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  /* model */
+
+.modal-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.modal-body {
+  padding: 0;
+}
+.btn-close {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+.myform {
+  padding: 2em;
+  max-width: 100%;
+  color: #fff;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  @media (max-width: 576px) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+.form-control:focus {
+  box-shadow: inset 0 -1px 0 #7e7e7e;
+}
+.form-control {
+  background-color: inherit;
+  color: #fff;
+  padding-left: 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+}
+.myform .btn {
+  width: 100%;
+  font-weight: 800;
+  background-color: #fff;
+  border-radius: 0;
+  padding: 0.5em 0;
+}
+.myform .btn:hover {
+  background-color: inherit;
+  color: #fff;
+  border-color: #fff;
+}
+p {
+  text-align: center;
+  padding-top: 2em;
+  color: grey;
+}
+p a {
+  color: #e1e1e1;
+  text-decoration: none;
+}
+p a:hover {
+  color: #fff;
+}
+
+.btn-dark{
+  padding-left: 5px;
+}
+
+
+  .second-section{
+    background-image: url(/images/poultry6.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+  }
+
+ 
+  .second-section .looking-for{
+    text-align: center;
+    color: #fff;
+    line-height: 5px;
+    z-index: 999;
+  }
+
+  .looking-for{
+    padding-top: 15px;
+  }
+
+  .masajja{
+    color:#16dd12 ;
+    font-weight: bold;
+   
+  }
+
+  input{
+    outline: #fff;
+  }
+::-webkit-input-placeholder{
+  color: #57daca;
+}
+
+  .third-section{
+    padding-top: 6px 0px;
+
+  }
+  
+  .marquee{
+    color: #fff;
+    font-size: 26px;
+    background-image: url(/images/poultry5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    
+  }
+
+
+
+.third-section{
+    padding: 10px 0px;
+    background-color: aliceblue;
+    border: 4px solid #fff;
+}
+
+/* fouth section */
+.fouth-section{
+    margin: 2rem 0.5rem;
+    padding: 20px 7px;
+    border: 1px solid rgb(252, 249, 249);
+    background-color: #fff;
+}
+
+.fouth-section h3{
+  padding-bottom: 2rem;
+    color: #000;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.top-selling{
+  transition: 1s;
+}
+
+.top-selling:hover{
+  transform: scale(1.3);
+ z-index: 2;
+}
+.top-selling img{
+    width: 10px;
+}
+.mybody{
+  height: 180px;
+  margin-top: -3rem;
+  text-align: center;
+  color: #fff;
+}
+.mycard img{
+  height: 170px;
+  width: 100%;
+}
+.mybody p{
+  color: grey;
+}
+
+.mybody h6{
+  color: #000;
+}
+
+.thisbutton{
+  padding: 10px;
+}
+
+/* footer styling*/
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: opx 5px 0px 5px;
+}
+
+.footer{
+  /* background-color: #282828;; */
+  background-color: #000;
+  color: grey;
+  padding: 2rem;
+
+}
+.footer .container{
+  padding: 5px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
+
+}
+.container .logo{
+  padding-top: 5rem;
+}
+
+.payment-method h5{
+  color: grey;
+  text-align: center;
+
+}
+
+.payment-method ul li{
+  list-style: none;
+  padding: 15px;
+
+}
+
+.payment-method ul li a{
+  text-decoration: none;
+}
+
+.payment-method ul li a img{
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.payment-method ul li a img:hover{
+  filter: opacity(0.4) drop-shadow(0 0 0 rgb(226, 4, 4));
+  
+}
+
+.follow-us h5{
+  color: grey;
+  text-align: center;
+}
+
+.follow-us ul li{
+  list-style: none;
+  padding: 10px;
+}
+
+.follow-us ul li a{
+  text-decoration: none;
+  color: #16dd12;
+}
+.follow-us ul li a img{
+  filter: opacity(0.4) drop-shadow(0 0 0 #16dd12);
+  width: 30px;
+  height: 30px;
+}
+.follow-us ul li a img:hover{
+  filter: opacity(0.4) drop-shadow(0 0 0 rgb(226, 4, 4));
+  
+}
+
+.support h5{
+  color: grey;
+  /* text-align: center; */
+  margin-left: 2em;
+}
+
+.support ul li{
+  list-style: none;
+  padding: 15px;
+}
+
+.support ul li a{
+  text-decoration: none;
+  color: grey;
+}
+.support a:hover{
+  border-bottom: 1px solid rgb(85, 80, 80);
+  color: rgb(226, 4, 4);
+}
+
+.copyright{
+  text-align: center;
+  margin: 10px 0px 20px 0px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+  
 }
