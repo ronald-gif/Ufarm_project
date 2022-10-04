@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="/styles/main.css">
     <script src="https://kit.fontawesome.com/69212664e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      .modal-header h5{
+        color: #000;
+      }
+
+      .conatiner-style{
+        background-color: gray;
+        color: #000;
+      }
+    </style>
 </head>
 <body>
     
@@ -43,7 +54,7 @@
               </li>
             </ul>
 
-            <!-- modal sign up -->
+            <!-- modal login -->
             <div class="buttonlogin">
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
                 Log in
@@ -64,7 +75,7 @@
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
-                                <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                                <button type="submit" class="btn-11 btn-light mt-3">LOGIN</button>
                                 <p>Not a member? <a href="#">Signup now</a></p>
                             </form>
                         </div>
@@ -75,35 +86,196 @@
             </div>
             
           <!--second modal sign up -->
-            <div class="buttonSign">
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
-                Sign up
-              </button>
-            <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class="myform bg-dark">
-                            <h1 class="text-center">Login Form</h1>
-                            <form>
-                                <div class="mb-3 mt-4">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <button type="submit" class="btn btn-light mt-3">LOGIN</button>
-                                <p>Not a member? <a href="#">Signup now</a></p>
-                            </form>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Sign up
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">FarmerOne</h5>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Urban farmer</button>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form action="myForm1" name="registration" id="myForm farmerone">
+          <div class="container">
+  
+              <div class="row mb-4" >
+  
+                  <div class="col">
+                      <div class="form-outline">
+                          <label class="form-label" for="form3Example1">First name:</label>
+                          <input type="text" id="form3Example1" class="form-control" />
+                         
                         </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            </div>
+                      </div>
+                      <div class="col">
+                          <div class="form-outline">
+                              <label class="form-label" for="form3Example1">Second name:</label>
+                              <input type="text" id="form3Example1" class="form-control" />
+                             
+                          </div>
+                      </div>
+                        <div class="col">
+                          <div class="form-outline">
+                              <label class="form-label" for="form3Example1">Phone number:</label>
+                              <input type="text" id="form3Example1" class="form-control" />
+                             
+                          </div>
+                      </div>
+                      
+              </div>
+              <div class="row mb-4">
+                  
+  
+                  <div class="col">
+                      <div class="form-outline">
+                          <label for="exampleInputPassword1" class="form-label"> Current date:</label>
+                          <input type="date" class="form-control" id="exampleInputPassword1">
+                        </div>
+                      </div>
+                        <div class="col">
+                          <div class="form-outline">
+                              <label for="exampleInputEmail1" class="form-label">Date of birth:</label>
+                              <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                      </div>
+                      <div class="col">
+                          <div class="form-outline">
+                              <label class="form-label" for="form3Example1">Unique number:</label>
+                              <input type="text" id="form3Example1" class="form-control" />
+                             
+                          </div>
+                      </div>
+                      
+              </div>
+              <div class="row mb-4">
+                  
+  
+                  <div class="col">
+                      <div class="form-outline">
+                          <label for="exampleInputPassword1" class="form-label">NIN Number:</label>
+                          <input type="nin" class="form-control" id="exampleInputPassword1">
+                        </div>
+                      </div>
+                        <div class="col">
+                          <div class="form-outline">
+                              <label class="form-label" for="form3Example1">Location:</label>
+                              <input type="text" id="form3Example1" class="form-control" />
+                             
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="form-outline">
+                              <label class="form-label" for="form3Example1">Residence type:</label>
+                              <input type="text" id="form3Example1" class="form-control" />
+                             
+                          </div>
+                      </div>
+                      
+              </div>
+              <div class="row mb-4">
+                  
+  
+                  <div class="col">
+                      <div class="form-field radio">
+                          <label for="gender">Gender:</label>
+                          <div class="radio">
+                          <input type="radio" name="sex" id="gender1" checked>
+                          <span>Male</span>
+                         <input type="radio" name="sex" id="gender2">
+                         <span>Female</span>
+          
+                          </div>
+                         
+                      </div>
+                      </div>
+                        <div class="col-4">
+                          <div class="form-o">
+                              <label for="ward">Ward</label>
+                          <select name="ward" id="my_ward" class="values-for-wards">
+                            <option value="ward1">LC1</option>
+                            <option value="ward2">LC2</option>
+                            <option value="ward3">LC3</option>
+                            <option value="ward4">LC4</option>
+                          </select>
+                            </div>
+                      </div>
+                      
+              </div>
+              <div class="row mb-4">
+                  
+  
+                  <div class="col">
+                      <div class="form-field radio">
+                          <label for="lang">Activities:</label>
+                          <div class="radio">
+                          <input type="checkbox" name="Luganda" value="language" id="gender1">
+                          <span>Mobilization</span>
+                         <input type="checkbox" name="english" value="language" id="gender2">
+                         <span>Supervision</span>
+                         <input type="checkbox" name="english" value="language" id="gender2">
+                         <span>Regulation</span>
+                         <input type="checkbox" name="english" value="language" id="gender2">
+                         <span>Support</span>
+          
+                          </div>
+                         
+                      </div>
+                      </div>
+                        
+                      
+              </div>
+              <div class="row mb-4">
+                  
+  
+                  <div class="col">
+                      <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Comfirm</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                       
+                      
+              </div>
+          </div>
+      </form>
+      
+        
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Urban farmer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+           
+            <!-- </div> -->
         
               
           </div>
@@ -127,7 +299,7 @@
               </form>
             </div>
             <div class="col">
-              
+
             </div>
           </div>
         </div>
@@ -208,17 +380,21 @@
 
       <!-- fouth section -->
       <div class="fouth-section">
-        <h3>Top selling products</h3>
+        <h1 class="heading"> latest <span>products</span> </h1>
         <div class="container-fluid sellingItems">
           <div class="row">
             <div class="col">
               
               <div class="top-selling">
                 <div class="card mycard" style="width: 15rem;">
-                  <img src="/images/p17.jpg" class="card-img-top" alt="pigeon">
+                  <span class="discount">-12%</span>
+                  <a href="">
+                    <img src="/images/p17.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
                   <div class="card-body mybody">
-                    <p class="card-text">pigeon</p>
-                    <h6>UGX 25000</h6>
+                    <p class="card-text">Pigeon</p>
+                    <div class="price"> UG 50000 <span>UG 70000</span> </div>
                     <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
                   </div>
                 </div>
@@ -231,10 +407,14 @@
               <div class="top-selling">
                 
                 <div class="card mycard" style="width: 15rem;">
-                  <img src="/images/p19.jpg" class="card-img-top" alt="...">
+                  <span class="discount">-6%</span>
+                  <a href="">
+                    <img src="/images/p19.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
                   <div class="card-body mybody">
                     <p class="card-text">Duck</p>
-                    <h6>UGX 40000</h6>
+                    <div class="price"> UG 33000 <span>UG 48000</span> </div>
                     <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
                   </div>
                 </div>
@@ -247,10 +427,14 @@
               <div class="top-selling">
                 
                 <div class="card mycard" style="width: 15rem;">
-                  <img src="/images/h31.jpg" class="card-img-top" alt="...">
+                  <span class="discount">-10%</span>
+                  <a href="">
+                    <img src="/images/h31.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
                   <div class="card-body mybody">
-                    <p class="card-text">Brazilian flowers</p>
-                    <h6>UGX 100000</h6>
+                    <p class="card-text">Brazilian Flowers</p>
+                    <div class="price"> UG 100000 <span>UG 120000</span> </div>
                     <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
                   </div>
                 </div>
@@ -263,13 +447,14 @@
               <div class="top-selling">
                 
                 <div class="card mycard" style="width: 15rem;">
+                  <span class="discount">-10%</span>
                   <a href="">
                     <img src="/images/p29.jpg" class="card-img-top" alt="...">
                   </a>
                  
                   <div class="card-body mybody">
                     <p class="card-text">Eggs</p>
-                    <h6>UGX 500</h6>
+                    <div class="price"> UG 500 <span>UG 600</span> </div>
                     <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
                   </div>
                 </div>
@@ -281,10 +466,98 @@
         </div>
       </div>
 
-      
+      <div class="fouth-section">
+        <div class="container-fluid sellingItems">
+          <div class="row">
+            <div class="col">
+              
+              <div class="top-selling">
+                <div class="card mycard" style="width: 15rem;">
+                  <span class="discount">-12%</span>
+                  <a href="">
+                    <img src="/images/img-3.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
+                  <div class="card-body mybody">
+                    <p class="card-text">Flowers</p>
+                    <div class="price"> UG 50000 <span>UG 70000</span> </div>
+                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              
+              <div class="top-selling">
+                
+                <div class="card mycard" style="width: 15rem;">
+                  <span class="discount">-6%</span>
+                  <a href="">
+                    <img src="/images/p19.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
+                  <div class="card-body mybody">
+                    <p class="card-text">Duck</p>
+                    <div class="price"> UG 33000 <span>UG 48000</span> </div>
+                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              
+              <div class="top-selling">
+                
+                <div class="card mycard" style="width: 15rem;">
+                  <span class="discount">-10%</span>
+                  <a href="">
+                    <img src="/images/img-1.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
+                  <div class="card-body mybody">
+                    <p class="card-text">Rose Flowers</p>
+                    <div class="price"> UG 100000 <span>UG 120000</span> </div>
+                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              
+              <div class="top-selling">
+                
+                <div class="card mycard" style="width: 15rem;">
+                  <span class="discount">-10%</span>
+                  <a href="">
+                    <img src="/images/p29.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
+                  <div class="card-body mybody">
+                    <p class="card-text">Eggs</p>
+                    <div class="price"> UG 500 <span>UG 600</span> </div>
+                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fifth section -->
+
+     
       <!-- footer -->
       <footer class="footer">
-        <div class="container">
+        <div class="container-last">
 
           <div class="logo">
             <a class="navbar-brand" href="index.html#">
