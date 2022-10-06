@@ -117,6 +117,8 @@ p a:hover {
 .btn-dark{
   padding-left: 5px;
 }
+
+
 .container{
   width: 40%;
   color: #000;
@@ -127,8 +129,12 @@ p a:hover {
   width: 800px;
   /* background-image: linear-gradient(rgba(0,0,100,0.8),rgba(0,0,100,0.8)),url(/images/poultry5.jpg); */
 }
-#myForm{
+.thisForm{
   padding: 10px 20px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .container h3 {
@@ -147,7 +153,7 @@ p a:hover {
   padding: 0px 50px 2px 50px;
 }
 .form-outline{
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 .form-outline label {
@@ -176,7 +182,20 @@ p a:hover {
 .form-outline select option{
   padding: 10px;
 }
+.form-outline input{
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  color: #000;
+}
 
+.form-outline:focus{
+ outline: none;
+}
+
+
+/* registration stops here */
+
+/* second section starts here */
   .second-section{
     background-image: url(/images/poultry6.jpg);
     background-position: center center;
@@ -239,35 +258,47 @@ p a:hover {
 
 /* fouth section */
 .fouth-section{
-    margin: 2rem 0.5rem;
-    padding: 20px 7px;
+    margin: 1rem 4rem;
+    padding: 18px 10px;
     border: 1px solid rgb(252, 249, 249);
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 5px 5px 5px 5px rgba(0,0,0, 0.3);
+    
 }
-
+.row2{
+  /* padding: 0px 0px 0px 1.5rem; */
+}
 .fouth-section h1{
   text-align: center;
   padding-bottom: 2rem;
-    color: #333;
+    color: #000;
     font-size: 40px;;
     font-weight: bolder;
 }
 .heading span{
   color:var(--pink);
 }
+
 .top-selling{
   transition: 1s;
 }
 
 .top-selling:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
  /* z-index: 2; */
+}
+
+.mycard:hover{
+  border: 1px solid rgb(252, 249, 249);
+ background-color: #fff;
+ border-radius: 5px;
+ box-shadow: 5px 5px 5px 5px rgba(0,0,0, 0.3);
 }
 .top-selling img{
     width: 10px;
     /* padding-top: -1rem; */
+
 }
 
 
@@ -310,27 +341,29 @@ p a:hover {
   color: grey;
 }
 
-.mybody h6{
+.mybody p{
   color: #000;
 }
-
+.my-last-btn{
+  padding: 10px 0px;
+}
 .thisbutton{
-  padding: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 /* footer styling*/
 .container-last{
   display: flex;
   justify-content: space-between;
-  padding: opx 5px 0px 5px;
+  padding: 0px 5px 0px 5px;
 }
 
 .footer{
-  /* background-color: #282828;; */
-  background-color: #000;
+  background-color: #282828;
   color: grey;
   padding: 2rem;
-
+  /* height: 50vh; */
 }
 .footer .container-last{
   padding: 5px 0px 0px 0px;
@@ -338,7 +371,7 @@ p a:hover {
 
 }
 .container-last .logo{
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .payment-method h5{
@@ -363,7 +396,11 @@ p a:hover {
 }
 
 .payment-method ul li a img:hover{
-  filter: opacity(0.5) drop-shadow var(--pink);
+  background-color: rgb(252, 255, 255);
+  opacity:0.7 !important;
+  filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+  box-shadow: 0 0 0px #fff !important;
+  border-radius: 50%;
   
 }
 
@@ -375,19 +412,25 @@ p a:hover {
 .follow-us ul li{
   list-style: none;
   padding: 10px;
+ 
 }
 
 .follow-us ul li a{
   text-decoration: none;
   color: #16dd12;
+  
 }
 .follow-us ul li a img{
-  filter: opacity(0.4) drop-shadow(0 0 0 #16dd12);
+  filter: opacity(0.4) drop-shadow(0 0 0 #fff);
   width: 30px;
   height: 30px;
 }
 .follow-us ul li a img:hover{
-  filter: opacity(0.4) drop-shadow(rgb(211 0  90));
+  background-color: rgb(252, 255, 255);
+  opacity:0.7 !important;
+  filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+  box-shadow: 0 0 0px #fff !important;
+  border-radius: 50%;
   
 }
 
@@ -407,15 +450,15 @@ p a:hover {
   color: grey;
 }
 .support a:hover{
-  border-bottom: 1px solid rgb(85, 80, 80);
-  color: var(--pink);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: #fff;
 }
 
 .copyright{
   text-align: center;
-  margin: 10px 0px 20px 0px;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  margin: 10px 0px 3px 0px;
+  padding-top: 0.5rem;
+  border-top: 1px solid grey;
 }
 
 /*  */

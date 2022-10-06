@@ -65,10 +65,10 @@
                     <div class="modal-body">
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="myform bg-dark">
-                            <h1 class="text-center">Login Form</h1>
-                            <form>
+                            <h1 class="text-center">Login</h1>
+                            <form action="" name="registration" id="myFormToRegister">
                                 <div class="mb-3 mt-4">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <label for="exampleInputEmail1" class="form-label">ID</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
@@ -87,47 +87,51 @@
             
           <!--second modal sign up -->
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Sign up
-</button>
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Backdrop">
+     Sign up
+    </button>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">FarmerOne</h5>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Urban farmer</button>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        
-        <form action="myForm1" name="registration" id="myForm farmerone">
-          <div class="container">
+     <!-- Modal -->
+     <div class="modal fade" id="Backdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      <div class="modal-header mb-2 mt-2">
+        <h3 style="color: #000;">FarmerOne</h3>
+
+         <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#drop">
+          Urban Farmer
+         </button>
+
+        <button type="button" class="btn-close mb-4 pb-4 btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> 
+      <div class="modal-body" style="color: #000;">
+       
+        <!-- sign up for farmer one -->
+
+        <form action="#" name="registration" id="myFormToRegister">
+          <div class="container thisForm">
   
               <div class="row mb-4" >
   
                   <div class="col">
                       <div class="form-outline">
                           <label class="form-label" for="form3Example1">First name:</label>
-                          <input type="text" id="form3Example1" class="form-control" />
-                         
+                          <input type="text" id="firstName" class="firstName" />
+                          <small class="error"></small>
                         </div>
                       </div>
                       <div class="col">
                           <div class="form-outline">
                               <label class="form-label" for="form3Example1">Second name:</label>
-                              <input type="text" id="form3Example1" class="form-control" />
-                             
+                              <input type="text" id="secondName" class="secondName" />
+                             <small class="error"></small>
                           </div>
                       </div>
                         <div class="col">
                           <div class="form-outline">
                               <label class="form-label" for="form3Example1">Phone number:</label>
-                              <input type="text" id="form3Example1" class="form-control" />
-                             
+                              <input type="text" id="telephone" class="telephone" />
+                              <small class="error"></small>
                           </div>
                       </div>
                       
@@ -137,21 +141,23 @@
   
                   <div class="col">
                       <div class="form-outline">
-                          <label for="exampleInputPassword1" class="form-label"> Current date:</label>
-                          <input type="date" class="form-control" id="exampleInputPassword1">
+                          <label for="currentDate" class="form-label"> Current date:</label>
+                          <input type="date" class="currentDate" id="currentDate">
+
                         </div>
                       </div>
                         <div class="col">
                           <div class="form-outline">
                               <label for="exampleInputEmail1" class="form-label">Date of birth:</label>
-                              <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <input type="date" class="DOB" id="DOB">
+                              <small class="error"></small>
                             </div>
                       </div>
                       <div class="col">
                           <div class="form-outline">
                               <label class="form-label" for="form3Example1">Unique number:</label>
-                              <input type="text" id="form3Example1" class="form-control" />
-                             
+                              <input type="text" id="uniqueNumber" class="uniqueNumber" />
+                              <small class="error"></small>
                           </div>
                       </div>
                       
@@ -162,21 +168,22 @@
                   <div class="col">
                       <div class="form-outline">
                           <label for="exampleInputPassword1" class="form-label">NIN Number:</label>
-                          <input type="nin" class="form-control" id="exampleInputPassword1">
+                          <input type="text" class="NIN" id="NIN">
+                          <small class="error"></small>
                         </div>
                       </div>
                         <div class="col">
                           <div class="form-outline">
                               <label class="form-label" for="form3Example1">Location:</label>
-                              <input type="text" id="form3Example1" class="form-control" />
-                             
+                              <input type="text" id="location" class="location" />
+                              <small class="error"></small>
                           </div>
                       </div>
                       <div class="col">
                           <div class="form-outline">
                               <label class="form-label" for="form3Example1">Residence type:</label>
-                              <input type="text" id="form3Example1" class="form-control" />
-                             
+                              <input type="text" id="residence" class="residence" />
+                              <small class="error"></small>
                           </div>
                       </div>
                       
@@ -217,15 +224,15 @@
                       <div class="form-field radio">
                           <label for="lang">Activities:</label>
                           <div class="radio">
-                          <input type="checkbox" name="Luganda" value="language" id="gender1">
+                          <input type="checkbox" name="Luganda" value="language" id="mobile">
                           <span>Mobilization</span>
-                         <input type="checkbox" name="english" value="language" id="gender2">
+                         <input type="checkbox" name="english" value="language" id="supervise">
                          <span>Supervision</span>
-                         <input type="checkbox" name="english" value="language" id="gender2">
+                         <input type="checkbox" name="english" value="language" id="regulate">
                          <span>Regulation</span>
-                         <input type="checkbox" name="english" value="language" id="gender2">
+                         <input type="checkbox" name="english" value="language" id="support">
                          <span>Support</span>
-          
+                         <small class="error"></small>
                           </div>
                          
                       </div>
@@ -249,38 +256,180 @@
           </div>
       </form>
       
-        
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Urban farmer</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Hide this modal and show the first with the button below.
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-      </div>
-    </div>
-  </div>
-</div>
+       </div>
+       </div>
+     </div>
+   </div>
 
-           
-            <!-- </div> -->
+   <!-- another model -->
+   <div class="modal fade" id="drop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+     <div class="modal-content">
+     <div class="modal-header mb-2 mt-2">
+
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Backdrop">
+        Farmer0ne
+       </button>
+
+      <h3 style="color: #000;">Urban Farmer</h3>
+
+       <button type="button" class="btn-close mb-4 pb-4 btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div> 
+     <div class="modal-body" style="color: #000;">
+     
+      <!-- sign up for urban farmers -->
+
+      <form action="myForm1" name="registration" id="myForm farmerone">
+        <div class="container thisForm">
+
+            <div class="row mb-4" >
+
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">First name:</label>
+                        <input type="text" id="firstName" class="firstName" />
+                        <small class="error"></small>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="form3Example1">Second name:</label>
+                            <input type="text" id="secondName" class="secondName" />
+                            <small class="error"></small>
+                        </div>
+                    </div>
+                      <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="form3Example1">Phone number:</label>
+                            <input type="text" id="telephone" class="telephone" />
+                            <small class="error"></small>
+                        </div>
+                    </div>
+                    
+            </div>
+            <div class="row mb-4">
+                
+
+                <div class="col">
+                    <div class="form-outline">
+                        <label for="exampleInputPassword1" class="form-label"> Current date:</label>
+                        <input type="date" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                      <div class="col">
+                        <div class="form-outline">
+                            <label for="exampleInputEmail1" class="form-label">Date of birth:</label>
+                            <input type="date" class="DOM" id="DOB">
+                            <small class="error"></small>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="form3Example1">ID:</label>
+                            <input type="text" id="uniqueNumber" class="uniqueNumber" />
+                            <small class="error"></small>
+                        </div>
+                    </div>
+                    
+            </div>
+            <div class="row mb-4">
+                
+
+                <div class="col">
+                    <div class="form-outline">
+                        <label for="exampleInputPassword1" class="form-label">NIN Number:</label>
+                        <input type="nin" class="NIN" id="NIN">
+                        <small class="error"></small>
+                      </div>
+                    </div>
+                      <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="form3Example1">Location/Division:</label>
+                            <input type="text" id="location" class="location" />
+                            <small class="error"></small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- <div class="form-outline">
+                            <label class="form-label" for="form3Example1">Residence type:</label>
+                            <input type="text" id="form3Example1" class="form-control" />
+                           
+                        </div> -->
+                    </div>
+                    
+            </div>
+            <div class="row mb-4">
+                
+
+                <div class="col">
+                    <div class="form-field radio">
+                        <label for="gender">Gender:</label>
+                        <div class="radio">
+                        <input type="radio" name="sex" id="gender1" checked>
+                        <span>Male</span>
+                       <input type="radio" name="sex" id="gender2">
+                       <span>Female</span>
         
-              
-          </div>
+                        </div>
+                       
+                    </div>
+                    </div>
+                      <div class="col-4">
+                        <div class="form-o">
+                            <label for="ward">Ward</label>
+                        <select name="ward" id="my_ward" class="values-for-wards">
+                          <option value="ward1">LC1</option>
+                          <option value="ward2">LC2</option>
+                          <option value="ward3">LC3</option>
+                          <option value="ward4">LC4</option>
+                        </select>
+                          </div>
+                    </div>
+                    
+            </div>
+            <div class="row mb-4">
+                
+
+                <div class="col">
+                    <div class="form-field radio">
+                        <label for="lang">Activities:</label>
+                        <div class="radio">
+                        <input type="checkbox" name="Luganda" value="language" id="harticulture">
+                        <span>Horticulture produce</span>
+                       <input type="checkbox" name="english" value="language" id="poultry">
+                       <span>Poultry produce</span>
+                       <input type="checkbox" name="english" value="language" id="dairy">
+                       <span>Dairy produce</span>
+                       <small class="error"></small>
+                        </div>
+                       
+                    </div>
+                    </div>
+                      
+                    
+            </div>
+            <div class="row mb-4">
+                
+
+                <div class="col">
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Comfirm</label>
+                      </div>
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                     
+                    
+            </div>
         </div>
-      </nav>
+    </form>
+    
+
+     </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
       <!-- SECOND SECTION -->
       <div class="second-section">
@@ -382,11 +531,11 @@
       <div class="fouth-section">
         <h1 class="heading"> latest <span>products</span> </h1>
         <div class="container-fluid sellingItems">
-          <div class="row">
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
             <div class="col">
               
               <div class="top-selling">
-                <div class="card mycard" style="width: 15rem;">
+                <div class="card mycard" style="width: 14rem;">
                   <span class="discount">-12%</span>
                   <a href="">
                     <img src="/images/p17.jpg" class="card-img-top" alt="...">
@@ -395,7 +544,9 @@
                   <div class="card-body mybody">
                     <p class="card-text">Pigeon</p>
                     <div class="price"> UG 50000 <span>UG 70000</span> </div>
-                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
                   </div>
                 </div>
                 
@@ -406,7 +557,7 @@
               
               <div class="top-selling">
                 
-                <div class="card mycard" style="width: 15rem;">
+                <div class="card mycard" style="width: 14rem;">
                   <span class="discount">-6%</span>
                   <a href="">
                     <img src="/images/p19.jpg" class="card-img-top" alt="...">
@@ -415,7 +566,9 @@
                   <div class="card-body mybody">
                     <p class="card-text">Duck</p>
                     <div class="price"> UG 33000 <span>UG 48000</span> </div>
-                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
                   </div>
                 </div>
                 
@@ -426,7 +579,7 @@
               
               <div class="top-selling">
                 
-                <div class="card mycard" style="width: 15rem;">
+                <div class="card mycard" style="width: 14rem;">
                   <span class="discount">-10%</span>
                   <a href="">
                     <img src="/images/h31.jpg" class="card-img-top" alt="...">
@@ -434,8 +587,10 @@
                  
                   <div class="card-body mybody">
                     <p class="card-text">Brazilian Flowers</p>
-                    <div class="price"> UG 100000 <span>UG 120000</span> </div>
-                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    <div class="price"> UG 1000 <span>UG 120000</span> </div>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
                   </div>
                 </div>
                 
@@ -446,7 +601,7 @@
               
               <div class="top-selling">
                 
-                <div class="card mycard" style="width: 15rem;">
+                <div class="card mycard" style="width: 14rem;">
                   <span class="discount">-10%</span>
                   <a href="">
                     <img src="/images/p29.jpg" class="card-img-top" alt="...">
@@ -455,12 +610,38 @@
                   <div class="card-body mybody">
                     <p class="card-text">Eggs</p>
                     <div class="price"> UG 500 <span>UG 600</span> </div>
-                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
+                    
                   </div>
                 </div>
                 
               </div>
             </div>
+            <div class="col">
+              
+              <div class="top-selling">
+                
+                <div class="card mycard" style="width: 14rem;">
+                  <span class="discount">-10%</span>
+                  <a href="">
+                    <img src="/images/p29.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
+                  <div class="card-body mybody">
+                    <p class="card-text">Eggs</p>
+                    <div class="price"> UG 500 <span>UG 600</span> </div>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+
             </div>
           </div>
         </div>
@@ -468,20 +649,22 @@
 
       <div class="fouth-section">
         <div class="container-fluid sellingItems">
-          <div class="row">
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
             <div class="col">
               
               <div class="top-selling">
-                <div class="card mycard" style="width: 15rem;">
+                <div class="card mycard" style="width: 14rem;">
                   <span class="discount">-12%</span>
                   <a href="">
-                    <img src="/images/img-3.jpg" class="card-img-top" alt="...">
+                    <img src="/images/p17.jpg" class="card-img-top" alt="...">
                   </a>
                  
                   <div class="card-body mybody">
-                    <p class="card-text">Flowers</p>
+                    <p class="card-text">Pigeon</p>
                     <div class="price"> UG 50000 <span>UG 70000</span> </div>
-                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
                   </div>
                 </div>
                 
@@ -492,7 +675,7 @@
               
               <div class="top-selling">
                 
-                <div class="card mycard" style="width: 15rem;">
+                <div class="card mycard" style="width: 14rem;">
                   <span class="discount">-6%</span>
                   <a href="">
                     <img src="/images/p19.jpg" class="card-img-top" alt="...">
@@ -501,7 +684,9 @@
                   <div class="card-body mybody">
                     <p class="card-text">Duck</p>
                     <div class="price"> UG 33000 <span>UG 48000</span> </div>
-                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
                   </div>
                 </div>
                 
@@ -512,16 +697,18 @@
               
               <div class="top-selling">
                 
-                <div class="card mycard" style="width: 15rem;">
+                <div class="card mycard" style="width: 14rem;">
                   <span class="discount">-10%</span>
                   <a href="">
-                    <img src="/images/img-1.jpg" class="card-img-top" alt="...">
+                    <img src="/images/h31.jpg" class="card-img-top" alt="...">
                   </a>
                  
                   <div class="card-body mybody">
-                    <p class="card-text">Rose Flowers</p>
-                    <div class="price"> UG 100000 <span>UG 120000</span> </div>
-                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    <p class="card-text">Brazilian Flowers</p>
+                    <div class="price"> UG 1000 <span>UG 120000</span> </div>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
                   </div>
                 </div>
                 
@@ -532,7 +719,7 @@
               
               <div class="top-selling">
                 
-                <div class="card mycard" style="width: 15rem;">
+                <div class="card mycard" style="width: 14rem;">
                   <span class="discount">-10%</span>
                   <a href="">
                     <img src="/images/p29.jpg" class="card-img-top" alt="...">
@@ -541,22 +728,49 @@
                   <div class="card-body mybody">
                     <p class="card-text">Eggs</p>
                     <div class="price"> UG 500 <span>UG 600</span> </div>
-                    <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
+                    
                   </div>
                 </div>
                 
               </div>
             </div>
+            <div class="col">
+              
+              <div class="top-selling">
+                
+                <div class="card mycard" style="width: 14rem;">
+                  <span class="discount">-10%</span>
+                  <a href="">
+                    <img src="/images/p29.jpg" class="card-img-top" alt="...">
+                  </a>
+                 
+                  <div class="card-body mybody">
+                    <p class="card-text">Eggs</p>
+                    <div class="price"> UG 500 <span>UG 600</span> </div>
+                    <div class="my-last-btn">
+                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+
             </div>
           </div>
         </div>
       </div>
+      <!-- fouth section stops here -->
 
       <!-- fifth section -->
 
      
       <!-- footer -->
-      <footer class="footer">
+      <footer class="footer" id="#foot_last">
         <div class="container-last">
 
           <div class="logo">
@@ -640,4 +854,5 @@
       </footer>
     <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
 </body>
+<script src=""></script>
 </html>
