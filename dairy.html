@@ -8,75 +8,942 @@
     <link type="image/x-icon" rel="icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://kit.fontawesome.com/69212664e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     
-      <!-- nav bar -->
-      <nav class="navbar navbar-expand-lg first-nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html#">
-            <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+   <!-- nav bar -->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html#">
+        <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html" style="color: #fff;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about-us.html"  style="color: #fff;">About us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/horticulture.html">Horticuture</a></li>
+              <li><a class="dropdown-item" href="/poultry.html">Poultry</a></li>
+              <li><a class="dropdown-item" href="/dairy.html">Dairy</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- modal sign up -->
+        <div class="buttonlogin">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
+            Log in
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html" style="color: #fff;">Home</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about-us.html"  style="color: #fff;">About us</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categories
-                </a>
-                <ul class="dropdown-menu">
-                  
-                  <li><a class="dropdown-item" href="/horticulture.html">Horticuture</a></li>
-                  <li><a class="dropdown-item" href="/poultry.html">Poultry</a></li>
-                  <li><a class="dropdown-item" href="/dairy.html">Dairy</a></li>
-
-                </ul>
-              </li>
-            </ul>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Register
-                </a>
-                <ul class="dropdown-menu">
-                  
-                  <li><a class="dropdown-item" href="fo_form.html">FarmerOne</a></li>
-                  <li><a class="dropdown-item" href="urban_farmer_form.html">Urban Farmer</a></li>
-                </ul>
-              </li>
-            </ul>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Sign up
-                  </a>
-                  <ul class="dropdown-menu">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Login</a></li>
-
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                  </ul>
-                </li>
-              </ul>
-          </div>
+        <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="myform bg-dark">
+                        <h1 class="text-center">Login Form</h1>
+                        <form>
+                            <div class="mb-3 mt-4">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn-11 btn-light mt-3">LOGIN</button>
+                            <p>Not a member? <a href="#">Signup now</a></p>
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </div>
         </div>
-      </nav>
+        </div>
+        
+      <!--second modal sign up -->
+        <div class="buttonSign">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
+            Sign up
+          </button>
+        <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="myform bg-dark">
+                        <h1 class="text-center">Login Form</h1>
+                        <form>
+                            <div class="mb-3 mt-4">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn-11 btn-light mt-3">LOGIN</button>
+                            <p>Not a member? <a href="#">Signup now</a></p>
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+    
+          
+      </div>
+    </div>
+  </nav>
+    
 
+<!-- prodcuts section starts  -->
+<div class="fouth-section">
+  <!-- <h1 class="heading"> latest <span>products</span> </h1> -->
+  <div class="container-fluid sellingItems">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
+      <div class="col">
+        
+        <div class="top-selling">
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-12%</span>
+            <a href="">
+              <img src="/images/p17.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Pigeon</p>
+              <div class="price"> UG 50000 <span>UG 70000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-6%</span>
+            <a href="">
+              <img src="/images/p19.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Duck</p>
+              <div class="price"> UG 33000 <span>UG 48000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/h31.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Brazilian Flowers</p>
+              <div class="price"> UG 1000 <span>UG 120000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fouth-section">
+  <!-- <h1 class="heading"> latest <span>products</span> </h1> -->
+  <div class="container-fluid sellingItems">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
+      <div class="col">
+        
+        <div class="top-selling">
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-12%</span>
+            <a href="">
+              <img src="/images/p17.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Pigeon</p>
+              <div class="price"> UG 50000 <span>UG 70000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-6%</span>
+            <a href="">
+              <img src="/images/p19.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Duck</p>
+              <div class="price"> UG 33000 <span>UG 48000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/h31.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Brazilian Flowers</p>
+              <div class="price"> UG 1000 <span>UG 120000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fouth-section">
+  <!-- <h1 class="heading"> latest <span>products</span> </h1> -->
+  <div class="container-fluid sellingItems">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
+      <div class="col">
+        
+        <div class="top-selling">
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-12%</span>
+            <a href="">
+              <img src="/images/p17.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Pigeon</p>
+              <div class="price"> UG 50000 <span>UG 70000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-6%</span>
+            <a href="">
+              <img src="/images/p19.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Duck</p>
+              <div class="price"> UG 33000 <span>UG 48000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/h31.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Brazilian Flowers</p>
+              <div class="price"> UG 1000 <span>UG 120000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fouth-section">
+  <!-- <h1 class="heading"> latest <span>products</span> </h1> -->
+  <div class="container-fluid sellingItems">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
+      <div class="col">
+        
+        <div class="top-selling">
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-12%</span>
+            <a href="">
+              <img src="/images/p17.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Pigeon</p>
+              <div class="price"> UG 50000 <span>UG 70000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-6%</span>
+            <a href="">
+              <img src="/images/p19.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Duck</p>
+              <div class="price"> UG 33000 <span>UG 48000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/h31.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Brazilian Flowers</p>
+              <div class="price"> UG 1000 <span>UG 120000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fouth-section">
+  <!-- <h1 class="heading"> latest <span>products</span> </h1> -->
+  <div class="container-fluid sellingItems">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
+      <div class="col">
+        
+        <div class="top-selling">
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-12%</span>
+            <a href="">
+              <img src="/images/p17.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Pigeon</p>
+              <div class="price"> UG 50000 <span>UG 70000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-6%</span>
+            <a href="">
+              <img src="/images/p19.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Duck</p>
+              <div class="price"> UG 33000 <span>UG 48000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/h31.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Brazilian Flowers</p>
+              <div class="price"> UG 1000 <span>UG 120000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fouth-section">
+  <!-- <h1 class="heading"> latest <span>products</span> </h1> -->
+  <div class="container-fluid sellingItems">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
+      <div class="col">
+        
+        <div class="top-selling">
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-12%</span>
+            <a href="">
+              <img src="/images/p17.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Pigeon</p>
+              <div class="price"> UG 50000 <span>UG 70000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-6%</span>
+            <a href="">
+              <img src="/images/p19.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Duck</p>
+              <div class="price"> UG 33000 <span>UG 48000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/h31.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Brazilian Flowers</p>
+              <div class="price"> UG 1000 <span>UG 120000</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        
+        <div class="top-selling">
+          
+          <div class="card mycard" style="width: 14rem;">
+            <span class="discount">-10%</span>
+            <a href="">
+              <img src="/images/p29.jpg" class="card-img-top" alt="...">
+            </a>
+           
+            <div class="card-body mybody">
+              <p class="card-text">Eggs</p>
+              <div class="price"> UG 500 <span>UG 600</span> </div>
+              <div class="my-last-btn">
+                <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- footer -->
+   <footer class="footer">
+    <div class="container-last">
+
+      <div class="logo">
+        <a class="navbar-brand" href="index.html#">
+          <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
+        </a>
+      </div>
+
+      <div class="payment-method">
+        <h5>Payment methods</h5>
+        <ul>
+          <li>
+            
+              <a href="">
+                <img src="/images/Payment_-_Airtel-02.png" alt="">
+              
+            </a>
+          </li>
+          <li>
+            
+              <a href="" >
+                <img src="/images/mtn.png" alt="">
+              </a>
+            
+          </li>
+          <li>
+            
+              <a href="" >
+                <img src="/images/money.jpg" alt="">
+              </a>
+            
+          </li>
+        </ul>
+      </div>
+
+      <div class="follow-us">
+        <h5>Stay with us on</h5>
+        <ul>
+          <li>
+            <a href="">
+            
+            <img src="/images/facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="">
+          <img src="/images/twitter.svg" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="/images/square-instagram.svg" alt="square-instagram">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="/images/envelope-solid.svg" alt="email ">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="support">
+        <h5>Support</h5>
+        <ul>
+          <li>
+            <a href="">Contact us</a>
+          </li>
+          <li>
+            <a href="">Help</a>
+          </li>
+          <li>
+            <a href="">Terms and condition</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <article>&copycopyright All rights reserved</article>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Show a second modal and hide this one with the button below.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Hide this modal and show the first with the button below.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
 <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
