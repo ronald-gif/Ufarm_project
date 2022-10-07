@@ -6,13 +6,13 @@
     outline: none;
      border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: .2s linear;
   }
 
   :root{
     --pink:#e84393;
-    --green:#3db83a
+    --green:#3db83a;
 }
 
 
@@ -119,7 +119,7 @@ p a:hover {
 }
 
 
-.container{
+/* .container{
   width: 40%;
   color: #000;
   background-color: #fff;
@@ -127,17 +127,18 @@ p a:hover {
   border-radius: 5px;
   box-shadow:0 2px 5px rgba(0,0,0, 0.3);
   width: 800px;
-  /* background-image: linear-gradient(rgba(0,0,100,0.8),rgba(0,0,100,0.8)),url(/images/poultry5.jpg); */
-}
+  background-image: linear-gradient(rgba(0,0,100,0.8),rgba(0,0,100,0.8)),url(/images/poultry5.jpg); */
+/* } */
 .thisForm{
   padding: 10px 20px;
   margin-bottom: 1rem;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+  width: 800px;
 }
 
-.container h3 {
+.thisForm h3 {
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 20px;
@@ -186,6 +187,7 @@ p a:hover {
   border: 2px solid #f0f0f0;
   border-radius: 5px;
   color: #000;
+  padding: 8px;
 }
 
 .form-outline:focus{
@@ -256,7 +258,7 @@ p a:hover {
     border: 4px solid #fff;
 }
 
-/* fouth section */
+/* fouth section starts here */
 .fouth-section{
     margin: 1rem 4rem;
     padding: 18px 10px;
@@ -266,9 +268,7 @@ p a:hover {
     box-shadow: 5px 5px 5px 5px rgba(0,0,0, 0.3);
     
 }
-.row2{
-  /* padding: 0px 0px 0px 1.5rem; */
-}
+
 .fouth-section h1{
   text-align: center;
   padding-bottom: 2rem;
