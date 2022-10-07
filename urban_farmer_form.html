@@ -1,331 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css"> 
-    <link rel="stylesheet" href="/styles/form.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Document</title>
 </head>
 <body>
-    <li><a href="index.html">home</a></li>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            
-          </div>
-
-          <!-- for for farmer one -->
-          <div class="col farmer_one">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Name</label>
-                <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-      
-                <div class="select">
-                  <label for="ward">Ward</label>
-              <select name="ward" id="my_ward">
-                <option value="ward1">LC1</option>
-                <option value="ward2">LC2</option>
-                <option value="ward3">LC3</option>
-                <option value="ward4">LC4</option>
-              </select>
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Unique id</label>
-                  <input type="unique-number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Current date</label>
-                  <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-      
-                <div class="select">
-                <label for="ward">Gender</label>
-              <select name="ward" id="my_ward">
-                <option value="ward1">Male</option>
-                <option value="ward2">Female</option>
-              </select>
-                </div>
-      
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Date of birth</label>
-                <input type="date" class="form-control" id="exampleInputPassword1">
-              </div>
-      
-              <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Activities</label>
-                  <input type="activities" class="form-control" id="exampleInputPassword1">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">NIN Number</label>
-                  <input type="nin-number" class="form-control" id="exampleInputPassword1">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Phone number</label>
-                  <input type="phone-number" class="form-control" id="exampleInputPassword1">
-                </div>
-      
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Comfirm</label>
-              </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-            
-          </div>
-          <div class="col">
-            
-          </div>
-        </div>
-      </div>
+  
 
 
 
-      <nav class="navbar bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
-</body>
-</html>
+  
 
-
-
-
-
-
-
-
- <!--second modal sign up -->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Sign up
-             </button>
-         
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-               <div class="modal-content">
-               <div class="modal-header mb-2 mt-2">
-                 <a href="">FarmerOne</a>
-                 
-         
-                 
-         
-         
-                 <button type="button" class="btn-close mb-4 btn-primary" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-
-              <div class="modal-body">
-                 
-                 <form action="myForm1" name="registration" id="myForm farmerone">
-                   <div class="container thisForm">
-           
-                       <div class="row mb-4" >
-           
-                           <div class="col">
-                               <div class="form-outline">
-                                   <label class="form-label" for="form3Example1">First name:</label>
-                                   <input type="text" id="form3Example1" class="form-control" />
-                                  
-                                 </div>
-                               </div>
-                               <div class="col">
-                                   <div class="form-outline">
-                                       <label class="form-label" for="form3Example1">Second name:</label>
-                                       <input type="text" id="form3Example1" class="form-control" />
-                                      
-                                   </div>
-                               </div>
-                                 <div class="col">
-                                   <div class="form-outline">
-                                       <label class="form-label" for="form3Example1">Phone number:</label>
-                                       <input type="text" id="form3Example1" class="form-control" />
-                                      
-                                   </div>
-                               </div>
-                               
+       <form action="#" name="registration" id="myFormToRegister">
+         <div class="container thisForm">
+ 
+             <div class="row mb-4" >
+ 
+                 <div class="col">
+                     <div class="form-outline">
+                         <label class="form-label" for="form3Example1">First name:</label>
+                         <input type="text" id="firstName" class="firstName" name="firstName"/>
+                         <small class="error"></small>
                        </div>
-                       <div class="row mb-4">
-                           
-           
-                           <div class="col">
-                               <div class="form-outline">
-                                   <label for="exampleInputPassword1" class="form-label"> Current date:</label>
-                                   <input type="date" class="form-control" id="exampleInputPassword1">
-                                 </div>
-                               </div>
-                                 <div class="col">
-                                   <div class="form-outline">
-                                       <label for="exampleInputEmail1" class="form-label">Date of birth:</label>
-                                       <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                     </div>
-                               </div>
-                               <div class="col">
-                                   <div class="form-outline">
-                                       <label class="form-label" for="form3Example1">Unique number:</label>
-                                       <input type="text" id="form3Example1" class="form-control" />
-                                      
-                                   </div>
-                               </div>
-                               
-                       </div>
-                       <div class="row mb-4">
-                           
-           
-                           <div class="col">
-                               <div class="form-outline">
-                                   <label for="exampleInputPassword1" class="form-label">NIN Number:</label>
-                                   <input type="nin" class="form-control" id="exampleInputPassword1">
-                                 </div>
-                               </div>
-                                 <div class="col">
-                                   <div class="form-outline">
-                                       <label class="form-label" for="form3Example1">Location:</label>
-                                       <input type="text" id="form3Example1" class="form-control" />
-                                      
-                                   </div>
-                               </div>
-                               <div class="col">
-                                   <div class="form-outline">
-                                       <label class="form-label" for="form3Example1">Residence type:</label>
-                                       <input type="text" id="form3Example1" class="form-control" />
-                                      
-                                   </div>
-                               </div>
-                               
-                       </div>
-                       <div class="row mb-4">
-                           
-           
-                           <div class="col">
-                               <div class="form-field radio">
-                                   <label for="gender">Gender:</label>
-                                   <div class="radio">
-                                   <input type="radio" name="sex" id="gender1" checked>
-                                   <span>Male</span>
-                                  <input type="radio" name="sex" id="gender2">
-                                  <span>Female</span>
-                   
-                                   </div>
-                                  
-                               </div>
-                               </div>
-                                 <div class="col-4">
-                                   <div class="form-o">
-                                       <label for="ward">Ward</label>
-                                   <select name="ward" id="my_ward" class="values-for-wards">
-                                     <option value="ward1">LC1</option>
-                                     <option value="ward2">LC2</option>
-                                     <option value="ward3">LC3</option>
-                                     <option value="ward4">LC4</option>
-                                   </select>
-                                     </div>
-                               </div>
-                               
-                       </div>
-                       <div class="row mb-4">
-                           
-           
-                           <div class="col">
-                               <div class="form-field radio">
-                                   <label for="lang">Activities:</label>
-                                   <div class="radio">
-                                   <input type="checkbox" name="Luganda" value="language" id="gender1">
-                                   <span>Mobilization</span>
-                                  <input type="checkbox" name="english" value="language" id="gender2">
-                                  <span>Supervision</span>
-                                  <input type="checkbox" name="english" value="language" id="gender2">
-                                  <span>Regulation</span>
-                                  <input type="checkbox" name="english" value="language" id="gender2">
-                                  <span>Support</span>
-                   
-                                   </div>
-                                  
-                               </div>
-                               </div>
-                                 
-                               
-                       </div>
-                       <div class="row mb-4">
-                           
-           
-                           <div class="col">
-                               <div class="mb-3 form-check">
-                                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                   <label class="form-check-label" for="exampleCheck1">Comfirm</label>
-                                 </div>
-                                 <button type="submit" class="btn btn-success">Submit</button>
-                               </div>
-                                
-                               
-                       </div>
-                   </div>
-               </form>
-               
-                 
-           </div>
-               
+                     </div>
+                     <div class="col">
+                         <div class="form-outline">
+                             <label class="form-label" for="form3Example1">Second name:</label>
+                             <input type="text" id="secondName" class="secondName" />
+                            <small class="error"></small>
+                         </div>
+                     </div>
+                       <div class="col">
+                         <div class="form-outline">
+                             <label class="form-label" for="form3Example1">Phone number:</label>
+                             <input type="text" id="telephone" class="telephone" />
+                             <small class="error"></small>
+                         </div>
+                     </div>
+                     
              </div>
-        </div>
-            </div>
+             <div class="row mb-4">
+                 
+ 
+                 <div class="col">
+                     <div class="form-outline">
+                         <label for="currentDate" class="form-label"> Current date:</label>
+                         <input type="date" class="currentDate" id="currentDate">
+
+                       </div>
+                     </div>
+                       <div class="col">
+                         <div class="form-outline">
+                             <label for="exampleInputEmail1" class="form-label">Date of birth:</label>
+                             <input type="date" class="DOB" id="DOB">
+                             <small class="error"></small>
+                           </div>
+                     </div>
+                     <div class="col">
+                         <div class="form-outline">
+                             <label class="form-label" for="form3Example1">Unique number:</label>
+                             <input type="text" id="uniqueNumber" class="uniqueNumber" />
+                             <small class="error"></small>
+                         </div>
+                     </div>
+                     
+             </div>
+             <div class="row mb-4">
+                 
+ 
+                 <div class="col">
+                     <div class="form-outline">
+                         <label for="exampleInputPassword1" class="form-label">NIN Number:</label>
+                         <input type="text" class="NIN" id="NIN">
+                         <small class="error"></small>
+                       </div>
+                     </div>
+                       <div class="col">
+                         <div class="form-outline">
+                             <label class="form-label" for="form3Example1">Location:</label>
+                             <input type="text" id="location" class="location" />
+                             <small class="error"></small>
+                         </div>
+                     </div>
+                     <div class="col">
+                         <div class="form-outline">
+                             <label class="form-label" for="form3Example1">Residence type:</label>
+                             <input type="text" id="residence" class="residence" />
+                             <small class="error"></small>
+                         </div>
+                     </div>
+                     
+             </div>
+             <div class="row mb-4">
+                 
+ 
+                 <div class="col">
+                     <!-- <div class="form-field radio">
+                         <label for="gender">Gender:</label>
+                         <div class="radio">
+                         <input type="radio" name="sex" id="gender1" checked>
+                         <span>Male</span>
+                        <input type="radio" name="sex" id="gender2">
+                        <span>Female</span>
          
-             <div class="modal fade" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-              <div class="modal-dialog modal-xl">
-               <div class="modal-content">
-                <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="nextmodel">
-                 Hide this modal and show the first with the button below.
-                </div>
-                </div>
-                </div>
-               </div>         
-              </div>
-            </div> -->
+                         </div>
+                        
+                     </div> -->
+                     </div>
+                       <!-- <div class="col-4">
+                         <div class="form-o">
+                             <label for="ward">Ward</label>
+                         <select name="ward" id="my_ward" class="values-for-wards">
+                           <option value="ward1">LC1</option>
+                           <option value="ward2">LC2</option>
+                           <option value="ward3">LC3</option>
+                           <option value="ward4">LC4</option>
+                         </select>
+                           </div>
+                     </div> -->
+                     
+             </div>
+             <div class="row mb-4">
+                 
+ 
+                 <div class="col">
+                     <div class="form-field radio">
+                         <label for="lang">Activities:</label>
+                         <div class="radio">
+                         <input type="checkbox" name="Luganda" value="language" id="mobile">
+                         <span>Mobilization</span>
+                        <input type="checkbox" name="english" value="language" id="supervise">
+                        <span>Supervision</span>
+                        <input type="checkbox" name="english" value="language" id="regulate">
+                        <span>Regulation</span>
+                        <input type="checkbox" name="english" value="language" id="support">
+                        <span>Support</span>
+                        <small class="error"></small>
+                         </div>
+                        
+                     </div>
+                     </div>
+                       
+                     
+             </div>
+             <div class="row mb-4">
+                 
+ 
+                 <div class="col">
+                     <div class="mb-3 form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Comfirm</label>
+                       </div>
+                       <button type="submit" class="btn" onclick="validateInputes()">Submit</button>
+                     </div>
+                      
+                     
+             </div>
+         </div>
+     </form>
+
+</body>
+<script>
+
+const form = document.querySelector('#myFormToRegister');
+const firstname = document.querySelector('#firstName');
+const secondname = document.getElementById('secondName');
+const telephone = document.getElementById('telephone');
+const NIN = document.getElementById('uniqueNumber');
+const DOB = document.getElementById('DOB');
+const location = document.getElementById('location');
+const residence = document.getElementById('residence');
+const mobile = document.getElementById('mobile');
+const supervise = document.getElementById('supervise');
+const regulate = document.getElementById('regulate');
+const support = document.getElementById('support');
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+
+    validateInputes()
+});
+
+function validateInputes(){
+    if(firstname.value.trim() === ''){
+        firstname.style.border = '2px solid red'
+        alert('name can not be empty')
+    }else{
+        firstname.style.border = '2px solod green'
+    }
+}
+
+</script>
+</html>

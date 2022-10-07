@@ -5,12 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>how to buy</title>
-    <link rel="stylesheet" href="/styles/how-to-buy.css">
     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <style>
+      .text-to-help h3{
+        font-size: 30px;
+        font-weight: bold;
+        color: #000;
+        padding: 1rem 0px 1rem;
+        margin-left: 2rem;
 
+      }
+
+      .text-to-help h5{
+        color: #282828;
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .text-to-help p{
+        font-size: 16px;
+        color: #7e7a7a;
+        text-align: left;
+        padding-top: 2px;
+      }
+      .second-text h3{
+        font-size: 30px;
+        font-weight: bold;
+        color: #000;
+        padding: 1rem 0px 1rem;
+        margin-left: 2rem;
+      }
+      .second-text h5{
+        color: #282828;
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .second-text p{
+        font-size: 16px;
+        color: #7e7a7a;
+        text-align: left;
+        padding-top: 2px;
+      }
+    </style>
 </head>
 <body>
-    
+  
    <!-- nav bar -->
    <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -53,10 +92,10 @@
                 <div class="modal-body">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="myform bg-dark">
-                        <h1 class="text-center">Login Form</h1>
-                        <form>
+                        <h1 class="text-center">Login</h1>
+                        <form action="" name="registration" id="myFormToRegister">
                             <div class="mb-3 mt-4">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <label for="exampleInputEmail1" class="form-label">ID</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
@@ -75,47 +114,51 @@
         
       <!--second modal sign up -->
         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-Sign up
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Backdrop">
+ Sign up
 </button>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-  <div class="modal-header">
-    <h5 class="modal-title" id="staticBackdropLabel">FarmerOne</h5>
-    <div class="modal-footer">
-      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Urban farmer</button>
-    </div>
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-  </div>
-  <div class="modal-body">
-    
-    <form action="myForm1" name="registration" id="myForm farmerone">
-      <div class="container">
+ <!-- Modal -->
+ <div class="modal fade" id="Backdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <div class="modal-dialog modal-xl">
+  <div class="modal-content">
+  <div class="modal-header mb-2 mt-2">
+    <h3 style="color: #000;">FarmerOne</h3>
+
+     <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#drop">
+      Urban Farmer
+     </button>
+
+    <button type="button" class="btn-close mb-4 pb-4 btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div> 
+  <div class="modal-body" style="color: #000;">
+   
+    <!-- sign up for farmer one -->
+
+    <form action="#" name="registration" id="myFormToRegister">
+      <div class="container thisForm">
 
           <div class="row mb-4" >
 
               <div class="col">
                   <div class="form-outline">
                       <label class="form-label" for="form3Example1">First name:</label>
-                      <input type="text" id="form3Example1" class="form-control" />
-                     
+                      <input type="text" id="firstName" class="firstName"/>
+                      <small class="error"></small>
                     </div>
                   </div>
                   <div class="col">
                       <div class="form-outline">
                           <label class="form-label" for="form3Example1">Second name:</label>
-                          <input type="text" id="form3Example1" class="form-control" />
-                         
+                          <input type="text" id="secondName" class="secondName" />
+                         <small class="error"></small>
                       </div>
                   </div>
                     <div class="col">
                       <div class="form-outline">
                           <label class="form-label" for="form3Example1">Phone number:</label>
-                          <input type="text" id="form3Example1" class="form-control" />
-                         
+                          <input type="text" id="telephone" class="telephone" />
+                          <small class="error"></small>
                       </div>
                   </div>
                   
@@ -125,21 +168,23 @@ Sign up
 
               <div class="col">
                   <div class="form-outline">
-                      <label for="exampleInputPassword1" class="form-label"> Current date:</label>
-                      <input type="date" class="form-control" id="exampleInputPassword1">
+                      <label for="currentDate" class="form-label"> Current date:</label>
+                      <input type="date" class="currentDate" id="currentDate">
+
                     </div>
                   </div>
                     <div class="col">
                       <div class="form-outline">
                           <label for="exampleInputEmail1" class="form-label">Date of birth:</label>
-                          <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="date" class="DOB" id="DOB">
+                          <small class="error"></small>
                         </div>
                   </div>
                   <div class="col">
                       <div class="form-outline">
                           <label class="form-label" for="form3Example1">Unique number:</label>
-                          <input type="text" id="form3Example1" class="form-control" />
-                         
+                          <input type="text" id="uniqueNumber" class="uniqueNumber" />
+                          <small class="error"></small>
                       </div>
                   </div>
                   
@@ -150,21 +195,22 @@ Sign up
               <div class="col">
                   <div class="form-outline">
                       <label for="exampleInputPassword1" class="form-label">NIN Number:</label>
-                      <input type="nin" class="form-control" id="exampleInputPassword1">
+                      <input type="text" class="NIN" id="NIN">
+                      <small class="error"></small>
                     </div>
                   </div>
                     <div class="col">
                       <div class="form-outline">
                           <label class="form-label" for="form3Example1">Location:</label>
-                          <input type="text" id="form3Example1" class="form-control" />
-                         
+                          <input type="text" id="location" class="location" />
+                          <small class="error"></small>
                       </div>
                   </div>
                   <div class="col">
                       <div class="form-outline">
                           <label class="form-label" for="form3Example1">Residence type:</label>
-                          <input type="text" id="form3Example1" class="form-control" />
-                         
+                          <input type="text" id="residence" class="residence" />
+                          <small class="error"></small>
                       </div>
                   </div>
                   
@@ -205,15 +251,15 @@ Sign up
                   <div class="form-field radio">
                       <label for="lang">Activities:</label>
                       <div class="radio">
-                      <input type="checkbox" name="Luganda" value="language" id="gender1">
+                      <input type="checkbox" name="Luganda" value="language" id="mobile">
                       <span>Mobilization</span>
-                     <input type="checkbox" name="english" value="language" id="gender2">
+                     <input type="checkbox" name="english" value="language" id="supervise">
                      <span>Supervision</span>
-                     <input type="checkbox" name="english" value="language" id="gender2">
+                     <input type="checkbox" name="english" value="language" id="regulate">
                      <span>Regulation</span>
-                     <input type="checkbox" name="english" value="language" id="gender2">
+                     <input type="checkbox" name="english" value="language" id="support">
                      <span>Support</span>
-      
+                     <small class="error"></small>
                       </div>
                      
                   </div>
@@ -229,7 +275,7 @@ Sign up
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Comfirm</label>
                     </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn">Submit</button>
                   </div>
                    
                   
@@ -237,91 +283,248 @@ Sign up
       </div>
   </form>
   
-    
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Urban farmer</button>
-  </div>
+   </div>
+   </div>
+ </div>
 </div>
-</div>
-</div>
-<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+
+<!-- another model -->
+<div class="modal fade" id="drop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 <div class="modal-dialog modal-xl">
-<div class="modal-content">
-  <div class="modal-header">
-    <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-  </div>
-  <div class="modal-body">
-    Hide this modal and show the first with the button below.
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-  </div>
-</div>
-</div>
-</div>
+ <div class="modal-content">
+ <div class="modal-header mb-2 mt-2">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <div class="text-to-help">
-              <h2>How to buy on Ufarm?</h2>
-              <h5>1. Search for the item.</h5>
-              <p>Find what you need using search panel. We have over a million products
-              choose precisely what you are looking for.</p>
-            </div>
-            <div class="text-to-help">
-        
-              <h5>2. Click on the product you want</h5>
-              <p>By clicking on it will be automatically added to cart, then choose the payment method you prefer</p>
-            </div>
-            <div class="text-to-help">
-              
-              <h5>3. Take your item and choose a delivery method</h5>
-              <p>We check our venders carefully, but it’s continuously way better to check twice, right? Meet a dealer in an open place and be 
-                beyond any doubt to pay as it were after collecting your thing..</p>
-            </div>
-            <div class="text-to-help">
-              
-              <h5>4. Leave your feedback about our services</h5>
-              <p>Feel free to tell us approximately your purchase. Your feedback will be distributed online on the seller’s page and will be exceptionally accommodating
-                 for other buyers. Let’s construct a secure and proficient trade community together!</p>
-            </div>
-            </div>
-  
-          <div class="col-4">
-  
-          </div>
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Backdrop">
+    Farmer0ne
+   </button>
+
+  <h3 style="color: #000;">Urban Farmer</h3>
+
+   <button type="button" class="btn-close mb-4 pb-4 btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+ </div> 
+ <div class="modal-body" style="color: #000;">
+ 
+  <!-- sign up for urban farmers -->
+
+  <form action="myForm1" name="registration" id="myForm farmerone">
+    <div class="container thisForm">
+
+        <div class="row mb-4" >
+
+            <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form3Example1">First name:</label>
+                    <input type="text" id="firstName" class="firstName" />
+                    <small class="error"></small>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Second name:</label>
+                        <input type="text" id="secondName" class="secondName" />
+                        <small class="error"></small>
+                    </div>
+                </div>
+                  <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Phone number:</label>
+                        <input type="text" id="telephone" class="telephone" />
+                        <small class="error"></small>
+                    </div>
+                </div>
+                
         </div>
-      </div>
+        <div class="row mb-4">
+            
+
+            <div class="col">
+                <div class="form-outline">
+                    <label for="exampleInputPassword1" class="form-label"> Current date:</label>
+                    <input type="date" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
+                  <div class="col">
+                    <div class="form-outline">
+                        <label for="exampleInputEmail1" class="form-label">Date of birth:</label>
+                        <input type="date" class="DOM" id="DOB">
+                        <small class="error"></small>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">ID:</label>
+                        <input type="text" id="uniqueNumber" class="uniqueNumber" />
+                        <small class="error"></small>
+                    </div>
+                </div>
+                
+        </div>
+        <div class="row mb-4">
+            
+
+            <div class="col">
+                <div class="form-outline">
+                    <label for="exampleInputPassword1" class="form-label">NIN Number:</label>
+                    <input type="nin" class="NIN" id="NIN">
+                    <small class="error"></small>
+                  </div>
+                </div>
+                  <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Location/Division:</label>
+                        <input type="text" id="location" class="location" />
+                        <small class="error"></small>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Residence type:</label>
+                        <input type="text" id="form3Example1" class="form-control" />
+                       
+                    </div> -->
+                </div>
+                
+        </div>
+        <div class="row mb-4">
+            
+
+            <div class="col">
+                <div class="form-field radio">
+                    <label for="gender">Gender:</label>
+                    <div class="radio">
+                    <input type="radio" name="sex" id="gender1" checked>
+                    <span>Male</span>
+                   <input type="radio" name="sex" id="gender2">
+                   <span>Female</span>
     
-      <div class="container">
-        <div class="row">
-          <div class="col">
+                    </div>
+                   
+                </div>
+                </div>
+                  <div class="col-4">
+                    <div class="form-o">
+                        <label for="ward">Ward</label>
+                    <select name="ward" id="my_ward" class="values-for-wards">
+                      <option value="ward1">LC1</option>
+                      <option value="ward2">LC2</option>
+                      <option value="ward3">LC3</option>
+                      <option value="ward4">LC4</option>
+                    </select>
+                      </div>
+                </div>
+                
+        </div>
+        <div class="row mb-4">
+            
 
+            <div class="col">
+                <div class="form-field radio">
+                    <label for="lang">Activities:</label>
+                    <div class="radio">
+                    <input type="checkbox" name="Luganda" value="language" id="harticulture">
+                    <span>Horticulture produce</span>
+                   <input type="checkbox" name="english" value="language" id="poultry">
+                   <span>Poultry produce</span>
+                   <input type="checkbox" name="english" value="language" id="dairy">
+                   <span>Dairy produce</span>
+                   <small class="error"></small>
+                    </div>
+                   
+                </div>
+                </div>
+                  
+                
+        </div>
+        <div class="row mb-4">
+            
+
+            <div class="col">
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Comfirm</label>
+                  </div>
+                  <button type="submit" class="btn">Submit</button>
+                </div>
+                 
+                
+        </div>
+    </div>
+</form>
+
+
+ </div>
+  </div>
+</div>
+</div>
+</nav>
+   
+
+  
+
+<!-- how to buy section starts here -->
+  <div class="how-to-buy">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <div class="text-to-help">
+            <h3>How to buy on Ufarm?</h3>
+            <h5>1. Search for the item.</h5>
+            <p>Find what you need using search panel. We have over a million products
+            choose precisely what you are looking for.</p>
+          </div>
+          <div class="text-to-help">
+      
+            <h5>2. Click on the product you want</h5>
+            <p>By clicking on it will be automatically added to cart, then choose the payment method you prefer</p>
+          </div>
+          <div class="text-to-help">
+            
+            <h5>3. Take your item and choose a delivery method</h5>
+            <p>We check our venders carefully, but it’s continuously way better to check twice, right? Meet a dealer in an open place and be 
+              beyond any doubt to pay as it were after collecting your thing..</p>
+          </div>
+          <div class="text-to-help">
+            
+            <h5>4. Leave your feedback about our services</h5>
+            <p>Feel free to tell us approximately your purchase. Your feedback will be distributed online on the seller’s page and will be exceptionally accommodating
+               for other buyers. Let’s construct a secure and proficient trade community together!</p>
+          </div>
           </div>
 
-          <div class="col">
-            <div class="second-text">
-              <h3>Security | Safety</h3>
-              <h5>Note</h5>
-              <p>We are profoundly centered on the security and can illuminate any issues in short-terms. That's why we request you, merciful, to leave review after purchasing. In case you
-                 run into any issues with a dealer, you'll report us and UFarm Group will check this vender as soon as possible.</p>
-            </div>
+        <div class="col-4">
 
-            <div class="second-text">
-              <h5>Security Tips</h5>
-              
-              <p>- Don't share your password with anyone</p>
-              <p>- It's always better to do cash on delivery</p>
-              <p>- Check the item BEFORE you buy it</p>
-
-
-               </div>
-          </div>
         </div>
       </div>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+        </div>
+
+        <div class="col">
+          <div class="second-text">
+            <h3>Security | Safety</h3>
+            <h5>Note</h5>
+            <p>We are profoundly centered on the security and can illuminate any issues in short-terms. That's why we request you, merciful, to leave review after purchasing. In case you
+               run into any issues with a dealer, you'll report us and UFarm Group will check this vender as soon as possible.</p>
+          </div>
+
+          <div class="second-text">
+            <h5>Security Tips</h5>
+            
+            <p>- Don't share your password with anyone</p>
+            <p>- It's always better to do cash on delivery</p>
+            <p>- Check the item BEFORE you buy it</p>
+
+
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     
 
       
       <!-- footer -->
