@@ -4,15 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UFarm</title>
+    <title>Contacts</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="/styles/main.css">
+    <style>
+        .contacts{
+            background-image: url(/images/img-2.jpg);
+            background-position: center;
+            height: 40vh;
+            border: 1px solid #f0f0f0;
+        }
+        .color-section{
+            width: 100%;
+            height: 24vh;
+            padding: 1rem auto;
+            margin: 2rem 0;
+            background-color: #fff;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+        }
+        .contact-us h2{
+            text-align: center;
+            /* padding: 1rem auto; */
+            margin-top: 3.5rem;
+            color: #3db83a;
+            font-weight: 800;
+           
+        }
+      
+        .details-of-how-to-contact{
+            width: 100%;
+            height: 20vh;
+            padding: 1rem auto;
+            /* margin: 2rem 0; */
+            background-color: #fff;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3); 
+        }
+
+        .call-us{
+            width: 80%;
+            height: 18vh;
+            background-color: #fff;
+            border: 3px solid #fff;
+            border-radius: 5px;
+            box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.3); 
+            margin-left: 2rem;
+            margin-top: -3rem;
+        }
+        .call{
+            width: 80%;
+            height: 18vh;
+            background-color: #fff;
+            border: 3px solid #fff;
+            border-radius: 5px;
+            box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.3); 
+            margin-left: 2rem;
+            margin-top: -3rem;
+        }
+        .reach-us{
+          text-align: center;
+          color: #000;
+          margin-top: 1rem;
+        }
+        .reach-us h3{
+          font-size: 20px;
+          font-weight: 800;
+          color: #3db83a;
+        }
+        .reach-us h5{
+          font-size: 16px;
+          font-weight: 700;
+
+        }
+
+        .simple-form{
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        #myform-message{
+          border-radius: 5px;
+          background-color: #fff;
+          width: 100%;
+          border: 1px solid #f0f0ff;
+          box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.3);
+        }
+        .form-message h4{
+          font-weight: bold;
+          text-align: center;
+          color: #3db83a;
+        }
+        .out-line-form{
+          margin-left: 1rem;
+          display: block;
+          padding: 10px;
+        }
+        .out-line-form label{
+          display: block;
+        }
+        .out-line-form input {
+          border: 2px solid #f0f0f0;
+          padding: 10px ;
+          border-radius: 5px;
+        }
+        .out-line-form textarea{
+          border: 3px solid #f0f0f0;
+          border-radius: 5px;
+          /* padding: 3px 10px; */
+        }
+
+        
+  @media (max-width:768px){
+    .call-us{
+    width: 50%;
+    height: ;
+  }
+  .call{
+      width: 100%;
+  }
+ 
+  .reach-us h3{
+  font-size: 16px;
+  }
+  .reach-us h5{
+   font-size: 11px;
+
+  }
+  }
+   
+   
+ @media (max-width:450px){
+   .call-us{
+    width: 100%;
+    margin-left: 0.1rem;
+     
+        }
+        .call{
+           width: 100%; 
+           margin-left: 0.1rem;
+            
+           
+        }
+        .reach-us{
+         
+        }
+        .reach-us h3{
+        
+        }
+        .reach-us h5{
+         
+
+        }
+   
+   
+ }
+ 
+    </style>
 </head>
 <body>
     
-  <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg">
+     <!-- nav bar -->
+     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html#">
             <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
@@ -418,429 +574,170 @@
     </div>
   </div>
 </nav>
+<!-- nav bar stops here -->
 
-      <!-- SECOND SECTION -->
-      <div class="second-section">
-        <div class="looking-for">
-          <h3>Find anything in <span class="masajja">Masajja</span></h3>
+<!-- contacts us section starts here -->
+<div class="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col">
+                <div class="color-section">
+                    <div class="contact-us">
+                        <h2>Contact us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
         </div>
-        <div class="container-fluid text-center">
-          <div class="row">
-            <div class="col">
-              
-            </div>
-            <div class="col">
-              <form class="d-flex" role="search">
-                <input class="form-control" type="search" placeholder="am looking for" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-            <div class="col">
+    </div>
+</div>
 
+<div class="details-of-how-to-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 ">
+                <div class="call-us">
+
+                    <div class="reach-us">
+                        <h3>Call us directly on</h3>
+                        <h5>+256776452454</h5>
+                    </div>
+                   
+                </div>
             </div>
-          </div>
+            <div class="col-6 ">
+                <div class="call">
+                    <div class="reach-us">
+                        <h3>Email us on</h3>
+                        <h5>ufarmmasajja@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-       </div>
-    
-      
-      <!-- third section -->
-      <div class="third-section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col">
+    </div>
+</div>
 
-              <!-- carouse -->
-              <div id="carouselExampleControls" class="carousel slide my-carouse" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/images/p35.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/images/p37.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/images/h28.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+<div class="simple-form">
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <div class="form-message">
+          <h4>Send us a message below </h4>
+          <form action="" name="myform-message" id="myform-message" method="post">
+            <div class="out-line-form">
+              <label for="" id="" class="">Name:</label>
+              <input type="text" id="fname" name="fname">
+              <small id="error"></small>
             </div>
 
-            <div class="col myMarquee">
-              <div class="card">
-                <div class="card-header">
-                  <marquee width="100%" direction="left" height="80px" class="marquee">
-                    UFarm a place for all farmers.
-                    </marquee>
-                </div>
-                <div class="card-body">
-                  <h2 class="card-text">How to buy on UFarm.</h2>
-                  <a href="how-to-buy.html" class="btn btn-primary">Click here</a>
-                </div>
-              </div>
+            <div class="out-line-form">
+              <label for="" id="" class="">Phone number:</label>
+              <input type="text" id="phone-number" name="phone-number">
+              <small id="error"></small>
             </div>
 
-            <div class="col">
-              <!-- second carouse -->
-              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/images/p21.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/images/p19.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/images/p17.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+            <div class="out-line-form">
+              <label for="" id="" class="">Message:</label>
+             <textarea name="" id="" cols="30" rows="10"></textarea>
+              <small id="error"></small>
             </div>
-          </div>
+          </form>
         </div>
       </div>
+      <div class="col"></div>
+    </div>
+  </div>
+</div>
 
-      <!-- fouth section -->
-      <div class="fouth-section">
-        <h1 class="heading"> latest <span>products</span> </h1>
-        <div class="container-fluid sellingItems">
-          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
-            <div class="col">
-              
-              <div class="top-selling">
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-12%</span>
-                  <a href="">
-                    <img src="/images/p17.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Pigeon</p>
-                    <div class="price"> UG 50000 <span>UG 70000</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
+<!-- contact us section starts here -->
 
-            <div class="col">
-              
-              <div class="top-selling">
-                
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-6%</span>
-                  <a href="">
-                    <img src="/images/p19.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Duck</p>
-                    <div class="price"> UG 33000 <span>UG 48000</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
+ <!-- footer -->
+ <footer class="footer" id="#foot_last">
+    <div class="container-last">
 
-            <div class="col">
-              
-              <div class="top-selling">
-                
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-10%</span>
-                  <a href="">
-                    <img src="/images/h31.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Brazilian Flowers</p>
-                    <div class="price"> UG 1000 <span>UG 120000</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="col">
-              
-              <div class="top-selling">
-                
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-10%</span>
-                  <a href="">
-                    <img src="/images/p29.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Eggs</p>
-                    <div class="price"> UG 500 <span>UG 600</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="col">
-              
-              <div class="top-selling">
-                
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-10%</span>
-                  <a href="">
-                    <img src="/images/p29.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Eggs</p>
-                    <div class="price"> UG 500 <span>UG 600</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
-
-            </div>
-          </div>
-        </div>
+      <div class="logo">
+        <a class="navbar-brand" href="index.html#">
+          <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
+        </a>
       </div>
 
-      <div class="fouth-section">
-        <div class="container-fluid sellingItems">
-          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 row2">
-            <div class="col">
+      <div class="payment-method">
+        <h5>Payment methods</h5>
+        <ul>
+          <li>
+            
+              <a href="/payment.html">
+                <img src="/images/Payment_-_Airtel-02.png" alt="">
               
-              <div class="top-selling">
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-12%</span>
-                  <a href="">
-                    <img src="/images/p17.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Pigeon</p>
-                    <div class="price"> UG 50000 <span>UG 70000</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="col">
-              
-              <div class="top-selling">
-                
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-6%</span>
-                  <a href="">
-                    <img src="/images/p19.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Duck</p>
-                    <div class="price"> UG 33000 <span>UG 48000</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="col">
-              
-              <div class="top-selling">
-                
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-10%</span>
-                  <a href="">
-                    <img src="/images/h31.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Brazilian Flowers</p>
-                    <div class="price"> UG 1000 <span>UG 120000</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="col">
-              
-              <div class="top-selling">
-                
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-10%</span>
-                  <a href="">
-                    <img src="/images/p29.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Eggs</p>
-                    <div class="price"> UG 500 <span>UG 600</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="col">
-              
-              <div class="top-selling">
-                
-                <div class="card mycard" style="width: 14rem;">
-                  <span class="discount">-10%</span>
-                  <a href="">
-                    <img src="/images/p29.jpg" class="card-img-top" alt="...">
-                  </a>
-                 
-                  <div class="card-body mybody">
-                    <p class="card-text">Eggs</p>
-                    <div class="price"> UG 500 <span>UG 600</span> </div>
-                    <div class="my-last-btn">
-                      <button class="btn btn-outline-success thisbutton" type="submit">Add To Cart</button>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- fouth section stops here -->
-
-      <!-- fifth section -->
-
-     
-      <!-- footer -->
-      <footer class="footer" id="#foot_last">
-        <div class="container-last">
-
-          <div class="logo">
-            <a class="navbar-brand" href="index.html#">
-              <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
             </a>
-          </div>
+          </li>
+          <li>
+            
+              <a href="/payment.html" >
+                <img src="/images/mtn.png" alt="">
+              </a>
+            
+          </li>
+          <li>
+            
+              <a href="payment.html" >
+                <img src="/images/money.jpg" alt="">
+              </a>
+            
+          </li>
+        </ul>
+      </div>
 
-          <div class="payment-method">
-            <h5>Payment methods</h5>
-            <ul>
-              <li>
-                
-                  <a href="/payment.html">
-                    <img src="/images/Payment_-_Airtel-02.png" alt="">
-                  
-                </a>
-              </li>
-              <li>
-                
-                  <a href="/payment.html" >
-                    <img src="/images/mtn.png" alt="">
-                  </a>
-                
-              </li>
-              <li>
-                
-                  <a href="payment.html" >
-                    <img src="/images/money.jpg" alt="">
-                  </a>
-                
-              </li>
-            </ul>
-          </div>
+      <div class="follow-us">
+        <h5>Stay with us on</h5>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100086467246132">
+            
+            <img src="/images/facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/UfarmMasajja">
+          <img src="/images/twitter.svg" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ufarm_masajja/">
+              <img src="/images/square-instagram.svg" alt="square-instagram">
+            </a>
+          </li>
+          <!-- li>
+            <a href="">
+              <img src="/images/envelope-solid.svg" alt="email ">
+            </a>
+          </li>< -->
+        </ul>
+      </div>
 
-          <div class="follow-us">
-            <h5>Stay with us on</h5>
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/profile.php?id=100086467246132">
-                
-                <img src="/images/facebook.svg" alt="facebook">
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/UfarmMasajja">
-              <img src="/images/twitter.svg" alt="twitter">
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/ufarm_masajja/">
-                  <img src="/images/square-instagram.svg" alt="square-instagram">
-                </a>
-              </li>
-              <!-- li>
-                <a href="">
-                  <img src="/images/envelope-solid.svg" alt="email ">
-                </a>
-              </li>< -->
-            </ul>
-          </div>
+      <div class="support">
+        <h5>Support</h5>
+        <ul>
+          <li>
+            <a href="/contact-us.html">Contact us</a>
+          </li>
+          <li>
+            <a href="/how-to-buy.html">Help</a>
+          </li>
+          <li>
+            <a href="">Terms and condition</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <article>&copycopyright All rights reserved</article>
+    </div>
+  </footer>
 
-          <div class="support">
-            <h5>Support</h5>
-            <ul>
-              <li>
-                <a href="/contact-us.html">Contact us</a>
-              </li>
-              <li>
-                <a href="/how-to-buy.html">Help</a>
-              </li>
-              <li>
-                <a href="">Terms and condition</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">
-          <article>&copycopyright All rights reserved</article>
-        </div>
-      </footer>
-    <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+
+<script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
 </body>
-<script src="/script.js"></script>
 </html>

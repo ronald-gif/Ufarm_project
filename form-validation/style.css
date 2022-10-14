@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.register{
+    width: 25%;
+    margin: 5vh 0px 0px 500px;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.register h3{
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-outline{
+    display: block;
+    color: #000;
+    margin: 20px;
+    padding: 5px;
+}
+
+.form-outline .allInup{
+    /* display: block; */
+    padding: 4px;
+}
+
+.form-outline .allInup input{
+    display: block;
+    padding: 7px 10p;
+}
