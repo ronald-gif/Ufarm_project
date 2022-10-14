@@ -1,132 +1,64 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="/styles/form.css">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
 </head>
 <body>
-  <li><a href="index.html">home</a></li>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            
-          </div> -->
-
-          <!-- for for farmer one -->
-          <div class="col  farmer_one">
-            <form>
-              <h5>All fields are required</h4>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Name</label> 
-                <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-      
-                <div class="select">
-                  <label for="ward">Ward</label>
-              <select name="ward" id="my_ward" class="values-for-wards">
-                <option value="ward1">LC1</option>
-                <option value="ward2">LC2</option>
-                <option value="ward3">LC3</option>
-                <option value="ward4">LC4</option>
-              </select>
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Unique number</label>
-                  <input type="unique-number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Current date</label>
-                  <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-      
-                <div class="select">
-                <label for="ward">Gender</label>
-              <select name="ward" id="my_ward" class="values-for-wards">
-                <option value="ward1">Male</option>
-                <option value="ward2">Female</option>
-              </select>
-                </div>
-      
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Date of birth</label>
-                <input type="date" class="form-control" id="exampleInputPassword1">
-              </div>
-      
-              <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Activities</label>
-                  <input type="activities" class="form-control" id="exampleInputPassword1">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">NIN Number</label>
-                  <input type="nin-number" class="form-control" id="exampleInputPassword1">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Phone number</label>
-                  <input type="phone-number" class="form-control" id="exampleInputPassword1">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Location</label>
-                  <input type="location" class="form-control" id="exampleInputPassword1">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Residence type</label>
-                  <input type="residence-type" class="form-control" id="exampleInputPassword1">
-                </div>
-      
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Period spent in this area</label>
-                  <input type="years" class="form-control" id="exampleInputPassword1">
-                </div>
-      
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Comfirm</label>
-              </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-            
-          </div>
-          <div class="col">
-            
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="form-field">
-              <label for="username">Username:</label>
-              <input type="text" name="userName" id="username" autocomplete="off" style="padding: 5px 8px; width: 100%;">
-              <small></small>
-          </div>
-          </div>
-          <div class="col">
-            <div class="form-field">
-              <label for="telephone">Phone number:</label>
-              <input type="text" name="telephone" id="telephone" autocomplete="off"  style="padding: 5px 8px; width: 100%;">
-              <small></small>
-          </div>
-          </div>
-           <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-        </div>
-      </div>
-      
-
-      <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
 </body>
+<script>
+  const form = document.getElementById('form')
+  const name = document.getElementById('username')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+});
+
+  
+const validateInputs = () => {
+    const usernameValue = name.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
+
+    if(usernameValue === '') {
+       name.style.border = '2px solid red';
+    } else {
+      name.style.border = '2px solid green';
+    }}
+</script>
 </html>

@@ -65,6 +65,104 @@
             margin-left: 2rem;
             margin-top: -3rem;
         }
+        .reach-us{
+          text-align: center;
+          color: #000;
+          margin-top: 1rem;
+        }
+        .reach-us h3{
+          font-size: 20px;
+          font-weight: 800;
+          color: #3db83a;
+        }
+        .reach-us h5{
+          font-size: 16px;
+          font-weight: 700;
+
+        }
+
+        .simple-form{
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        #myform-message{
+          border-radius: 5px;
+          background-color: #fff;
+          width: 100%;
+          border: 1px solid #f0f0ff;
+          box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.3);
+        }
+        .form-message h4{
+          font-weight: bold;
+          text-align: center;
+          color: #3db83a;
+        }
+        .out-line-form{
+          margin-left: 1rem;
+          display: block;
+          padding: 10px;
+        }
+        .out-line-form label{
+          display: block;
+        }
+        .out-line-form input {
+          border: 2px solid #f0f0f0;
+          padding: 10px ;
+          border-radius: 5px;
+        }
+        .out-line-form textarea{
+          border: 3px solid #f0f0f0;
+          border-radius: 5px;
+          /* padding: 3px 10px; */
+        }
+
+        
+  @media (max-width:768px){
+    .call-us{
+    width: 50%;
+    height: ;
+  }
+  .call{
+      width: 100%;
+  }
+ 
+  .reach-us h3{
+  font-size: 16px;
+  }
+  .reach-us h5{
+   font-size: 11px;
+
+  }
+  }
+   
+   
+ @media (max-width:450px){
+   .call-us{
+    width: 100%;
+    margin-left: 0.1rem;
+     
+        }
+        .call{
+           width: 100%; 
+           margin-left: 0.1rem;
+            
+           
+        }
+        .reach-us{
+         
+        }
+        .reach-us h3{
+        
+        }
+        .reach-us h5{
+         
+
+        }
+   
+   
+ }
+ 
     </style>
 </head>
 <body>
@@ -498,24 +596,59 @@
 <div class="details-of-how-to-contact">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 ">
                 <div class="call-us">
 
-                    <div class="rech-us">
-                        <p> </p>
+                    <div class="reach-us">
+                        <h3>Call us directly on</h3>
+                        <h5>+256776452454</h5>
                     </div>
                    
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 ">
                 <div class="call">
-                    <div class="rech-us">
-                        <p></p>
+                    <div class="reach-us">
+                        <h3>Email us on</h3>
+                        <h5>ufarmmasajja@gmail.com</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div class="simple-form">
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <div class="form-message">
+          <h4>Send us a message below </h4>
+          <form action="" name="myform-message" id="myform-message" method="post">
+            <div class="out-line-form">
+              <label for="" id="" class="">Name:</label>
+              <input type="text" id="fname" name="fname">
+              <small id="error"></small>
+            </div>
+
+            <div class="out-line-form">
+              <label for="" id="" class="">Phone number:</label>
+              <input type="text" id="phone-number" name="phone-number">
+              <small id="error"></small>
+            </div>
+
+            <div class="out-line-form">
+              <label for="" id="" class="">Message:</label>
+             <textarea name="" id="" cols="30" rows="10"></textarea>
+              <small id="error"></small>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
 </div>
 
 <!-- contact us section starts here -->
