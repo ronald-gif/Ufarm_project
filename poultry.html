@@ -13,8 +13,8 @@
 </head>
 <body>
     
-   <!-- nav bar -->
-   <nav class="navbar navbar-expand-lg">
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html#">
         <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
@@ -44,72 +44,61 @@
           </li>
         </ul>
 
-        <!-- modal sign up -->
+        <!-- modal login -->
         <div class="buttonlogin">
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
             Log in
           </button>
-        <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="myform bg-dark">
-                        <h1 class="text-center">Login Form</h1>
-                        <form>
-                            <div class="mb-3 mt-4">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <button type="submit" class="btn-11 btn-light mt-3">LOGIN</button>
-                            <p>Not a member? <a href="#">Signup now</a></p>
-                        </form>
-                    </div>
-                </div>
-              </div>
-            </div>
-        </div>
         </div>
         
-      <!--second modal sign up -->
-        <div class="buttonSign">
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
-            Sign up
-          </button>
-        <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="myform bg-dark">
-                        <h1 class="text-center">Login Form</h1>
-                        <form>
-                            <div class="mb-3 mt-4">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <button type="submit" class="btn-11 btn-light mt-3">LOGIN</button>
-                            <p>Not a member? <a href="#">Signup now</a></p>
-                        </form>
-                    </div>
-                </div>
-              </div>
-            </div>
+     
+        <!-- Button trigger modal -->
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Backdrop">
+ Sign up
+</button>
+
+ <!-- Modal -->
+ <div class="modal fade" id="Backdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <div class="modal-dialog ">
+  <div class="modal-content">
+  <div class="modal-header">
+    <h3 style="color: #000;">Register as:</h3>
+    <button type="button" class="btn-close mb-4 pb-4 btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div> 
+  <div class="modal-body" style="color: #000;">
+    <div class="container">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col">
+          <div class="navLinks">
+            <ul>
+              <li>
+                <a href="/AO.html">Agriculture Officer</a>
+              </li>
+              <li>
+                <a href="/FO.html">FarmerOne</a>
+              </li>
+              <li>
+                <a href="/urban_farmer_form.html">Urban farmer</a>
+              </li>
+              <li>
+                <a href="/normaluser.html">Normal user</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
-    
-          
       </div>
     </div>
-  </nav>
+     </a> 
+   </div>
+   </div>
+ </div>
+</div>
+ </div>
+  </div>
+</div>
+</div>
+</nav>
     
 
 <!-- prodcuts section starts  -->
@@ -895,7 +884,7 @@
             <a href="/how-to-buy.html">Help</a>
           </li>
           <li>
-            <a href="">Terms and condition</a>
+            <a href="/termsandcondition.html">Terms and condition</a>
           </li>
         </ul>
       </div>
@@ -905,45 +894,6 @@
     </div>
   </footer>
 
-
-
-
-
-
-
-  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Show a second modal and hide this one with the button below.
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Hide this modal and show the first with the button below.
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
 <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

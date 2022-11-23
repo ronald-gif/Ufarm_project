@@ -41,12 +41,62 @@
           </ul>
         </li>
       </ul>
-    
+
+      <!-- modal login -->
+      <div class="buttonlogin">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
+          Log in
+        </button>
+      </div>
+      
+   
+      <!-- Button trigger modal -->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Backdrop">
+Sign up
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Backdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog ">
+<div class="modal-content">
+<div class="modal-header">
+  <h3 style="color: #000;">Register as:</h3>
+  <button type="button" class="btn-close mb-4 pb-4 btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+</div> 
+<div class="modal-body" style="color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col">
+        <div class="navLinks">
+          <ul>
+            <li>
+              <a href="/AO.html">Agriculture Officer</a>
+            </li>
+            <li>
+              <a href="/FO.html">FarmerOne</a>
+            </li>
+            <li>
+              <a href="/urban_farmer_form.html">Urban farmer</a>
+            </li>
+            <li>
+              <a href="/normaluser.html">Normal user</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    </div>
-   </div>
   </div>
-</nav>      
+   </a> 
+ </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>     
   
 <!-- farmerOne registration -->
 <div class="myform1">
@@ -110,25 +160,29 @@
 
             <div class="col">
                 <div class="form-outline" id="error8">
-                    <label for="exampleInputPassword1" class="form-label">NIN Number:</label>
+                    <label class="form-label">NIN Number:</label>
                     <input type="text" class="nin" name="nin" id="nin">
                     <small class="error"></small>
                   </div>
                 </div>
+
                   <div class="col">
                     <div class="form-outline" id="error9">
-                        <label class="form-label" for="form3Example1">Location:</label>
-                        <input type="text" name="location"  id="location">
-                        <small class="error"></small>
+                      <label class="form-label">Location:</label>
+                      <input type="text" name="location" id="location">
+                      <small class="error"></small>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="form-outline" id="error10">
                         <label class="form-label" for="form3Example1">Residence type:</label>
-                        <select name="residence" id="my_ward" class="values-for-wards">
+                        <select name="residence" id="residence">
+                          <option value="">select residence type</option>
                           <option value="permanent" id="permanent">Permanent</option>
                           <option value="temporary" id="temporary">Temporary</option>
                         </select>
+                        <small class="error"></small>
                     </div>
                 </div>
 
@@ -142,7 +196,7 @@
 
           <div class="col">
               <div class="form-outline" id="error11">
-                  <label for="exampleInputPassword1" class="form-label">Password:</label>
+                  <label class="form-label">Password:</label>
                   <input type="password" class="password" name="password" id="password">
                   <small class="error"></small>
                 </div>
@@ -176,18 +230,21 @@
         </div>
 
             <div class="col">
-              <div class=" form-outline form-o" id="error15">
-                <label for="gender">Gender:</label>
-            <select name="ward" id="my_ward" class="values-for-wards">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-              </div>
+          <div class=" form-outline form-o" id="error15">
+           <label for="gender">Gender:</label>
+              <select name="gender" id="gender">
+                <option value="" >Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <small class="error"></small>
+          </div>
                 </div>
                   <div class="col-4">
                     <div class=" form-outline form-o" id="error16">
                         <label for="ward">Ward:</label>
-                    <select name="ward" id="my_ward" class="values-for-wards">
+                    <select name="ward" id="myward" class="values-for-wards">
+                      <option value="">Select ward</option>
                       <option value="ward1">LC1</option>
                       <option value="ward2">LC2</option>
                       <option value="ward3">LC3</option>
@@ -205,17 +262,15 @@
                 <div class="form-outline radio" id="error17">
                     <label for="lang">Activities:</label>
                     <div class="radio">
-                    <input type="checkbox" name="Luganda" value="language" id="mobile">
-                    <span>Mobilization</span>
-                   <input type="checkbox" name="english" value="language" id="supervise">
-                   <span>Supervision</span>
-                   <input type="checkbox" name="english" value="language" id="regulate">
-                   <span>Regulation</span>
-                   <input type="checkbox" name="english" value="language" id="support">
-                   <span>Support</span>
-                   <small class="error"></small>
+                    <input type="checkbox" name="horticulture" value="horticulture" id="horticulture">
+                    <span>Horticulture</span>
+                   <input type="checkbox" name="dairy" value="dairy" id="dairy">
+                   <span>Dairy </span>
+                   <input type="checkbox" name="poultry" value="poultry" id="poultry">
+                   <span>Poultry</span><br>
+                  
                     </div>
-                   
+                    <small class="error"></small> 
                 </div>
                 </div>
                   

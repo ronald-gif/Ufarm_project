@@ -10,49 +10,200 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html#">
-            <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
+
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html#">
+      <img src="/images/onlinelogomaker-091022-1346-6665.png" alt="" >
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index.html" style="color: #fff;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about-us.html"  style="color: #fff;">About us</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
           </a>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/horticulture.html">Horticuture</a></li>
+            <li><a class="dropdown-item" href="/poultry.html">Poultry</a></li>
+            <li><a class="dropdown-item" href="/dairy.html">Dairy</a></li>
+          </ul>
+        </li>
+      </ul>
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Register As
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Farmer One</a></li>
-                    <li><a class="dropdown-item" href="#">Urban Farmer</a></li>
-                  </ul>
-                </li>
-              </ul>
-
-            <form class="d-flex" role="search">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Account
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">login</a></li>
-                    <li><a class="dropdown-item" href="#">Sign in</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </form>
-          </div>
-        </div>
-      </nav> -->
-
-
+      <!-- modal login -->
+      <div class="buttonlogin">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
+          Log in
+        </button>
+      </div>
       
+   
+      <!-- Button trigger modal -->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Backdrop">
+Sign up
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Backdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog ">
+<div class="modal-content">
+<div class="modal-header">
+  <h3 style="color: #000;">Register as:</h3>
+  <button type="button" class="btn-close mb-4 pb-4 btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+</div> 
+<div class="modal-body" style="color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col">
+        <div class="navLinks">
+          <ul>
+            <li>
+              <a href="/AO.html">Agriculture Officer</a>
+            </li>
+            <li>
+              <a href="/FO.html">FarmerOne</a>
+            </li>
+            <li>
+              <a href="/urban_farmer_form.html">Urban farmer</a>
+            </li>
+            <li>
+              <a href="/normaluser.html">Normal user</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+   </a> 
+ </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>     
+  
+<!-- farmerOne registration -->
+<div class="myform1">
+  <h3>Agriculture officer registration</h3>
+  <form action="/" name="registration" id="myFormToRegister">
+    <div class="container thisForm">
+
+        <div class="row mb-4" >
+
+            <div class="col">
+                <div class="form-outline" id="error1">
+                    <label class="form-label" for="form3Example1">First name:</label>
+                    <input type="text" id="firstName" name="firstname" class="firstName"/>
+                    <small class="error"></small>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline" id="error2">
+                        <label class="form-label" for="form3Example1">Second name:</label>
+                        <input type="text" id="secondname" name="secondname" class="secondName" />
+                       <small class="error"></small>
+                    </div>
+                </div>
+                  <div class="col">
+                    <div class="form-outline" id="error3">
+                        <label class="form-label" for="form3Example1">Phone number:</label>
+                        <input type="text" id="telephone" name="telephone" class="telephone" />
+                        <small class="error"></small>
+                    </div>
+                </div>
+                
+        </div>
+        <div class="row mb-4">
+            
+
+            <div class="col">
+                <div class="form-outline" id="error5">
+                    <label for="currentDate" class="form-label"> Current date:</label>
+                    <input type="date" class="currentDate" name="currentdate" id="currentdate">
+
+                  </div>
+                </div>
+                  <div class="col">
+                    <div class="form-outline" id="error6">
+                        <label for="exampleInputEmail1" class="form-label">Date of birth:</label>
+                        <input type="date" class="DOB" name="dateofbirth" id="DOB" style="padding-right: 5px;">
+                        <small class="error"></small>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline" id="error7">
+                        <label class="form-label" for="form3Example1">ID:</label>
+                        <input type="text" id="uniquenumber" name="uniquenumber" class="uniqueNumber" />
+                        <small class="error"></small>
+                    </div>
+                </div>
+                
+        </div>
+
+        <div class="row mb-4">
+          <div class="col">
+              <div class="form-outline" id="error11">
+                  <label class="form-label">Password:</label>
+                  <input type="password" class="password" name="password" id="password">
+                  <small class="error"></small>
+                </div>
+              </div>
+                <div class="col">
+                  
+              </div>
+              <div class="col">
+                <div class="form-outline" id="error12">
+                  <label class="form-label" for="form3Example1">Confirm Password:</label>
+                  <input type="password" id="confirmpassword" name="confirmpassword" class="confirmpassword" />
+                  <small class="error"></small>
+              </div>
+              </div> 
+      </div>
+
+        <div class="row mb-4">
+            <div class="col">
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Comfirm</label>
+                  </div>
+                  <div class="fo-signup">
+                    <button type="submit" class="btn-1">Submit</button>
+                  </div>
+                 
+                </div>
+                 
+                
+        </div>
+    </div>
+    
+</form>
+
+ </div>
+ </div>
+</div>
+</div>
+</div>
+
+
+
 
     <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
 </body>
+<script src="/script.js"></script>
 </html>

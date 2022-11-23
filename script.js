@@ -12,17 +12,27 @@ const error6 = document.getElementById('error6')
 const currentdate = document.getElementById('currentdate');
 const error5 = document.getElementById('error5');
 const nin = document.getElementById('nin');
-const error8 = document.getElementById('error8');
+// const error8 = document.getElementById('error8');
 // const location = document.getElementById('location');
-// const error9 = document.getElementById('error9')
+const error9 = document.getElementById('error9')
 const password = document.getElementById('password')
 const error11 = document.getElementById('error11');
-const confirmpassword = document.getElementById('confirmpassword')
+const confirmpassword = document.getElementById('confirmpassword');
 const error12 = document.getElementById('error12');
-const directiontohome = document.getElementById('directiontohome')
+const directiontohome = document.getElementById('directiontohome');
 const error13 = document.getElementById('error13')
-const yearsspent = document.getElementById('yearsspent')
-const error14 = document.getElementById('error14')
+const yearsspent = document.getElementById('yearsspent');
+const error14 = document.getElementById('error14');
+const residence = document.getElementById('residence');
+const error10 = document.getElementById('error10');
+const gender = document.getElementById('gender');
+const error15 = document.getElementById('error15');
+const myward = document.getElementById('myward');
+const error16 = document.getElementById('error16');
+const horticulture = document.getElementById('horticulture');
+const dairy = document.getElementById( 'dairy');
+const poultry = document.getElementById('poultry');
+const error17 = document.getElementById('error17')
 
 
 form.addEventListener('submit', e => {
@@ -58,6 +68,7 @@ const validateInputs = () => {
     const dateofbirthValue = dateofbirth.value;
     const currentdateValue = currentdate.value;
     const ninValue = nin.value.trim();
+    let valid = false;
   
 
     if(firstnameValue === '') {
@@ -168,17 +179,64 @@ const validateInputs = () => {
     }else if(yearsspent.value.trim() < 10){
         yearsspent.style.border = '2px solid #ff3860';
         error14.lastElementChild.innerText = 'your not qualified';
+    }else if(isNaN(yearsspent.value.trim())){
+        yearsspent.style.border = '2px solid #ff3860';
+        error14.lastElementChild.innerText = 'Enter number'; 
     }else{
         yearsspent.style.border = '2px solid #09c372';
-        error14.lastElementChild.innerText = ''; 
+        error14.lastElementChild.innerText = '';  
     }
-    // if(location.value .trim() === ''){
+
+    // if(location.value.trim() === ''){
     //     location.style.border = '2px solid #ff3860';
     //     error9.lastElementChild.innerText = 'Provide location'
     // }else{
     //     location.style.border = '2px solid #09c372'
     //     error9.lastElementChild.innerText = ''
     // }
+
+    if(residence.value === ''){
+        let permanent = document.getElementById('permanent')
+        residence.style.border = '2px solid #ff3860';
+        error10.lastElementChild.innerText = 'Select an option';
+    }else if(residence.value != permanent.value){
+        residence.style.border = '2px solid #ff3860';
+        error10.lastElementChild.innerText = 'you need to be a permanent reidence';
+    }else{
+        residence.style.border = '2px solid #09c372';
+        error10.lastElementChild.innerText = ''; 
+    }
+
+    if(gender.value === ''){
+        gender.style.border = '2px solid #ff3860';
+        error15.lastElementChild.innerText = 'Select gender'; 
+    }else{
+        gender.style.border = '2px solid #09c372';
+        error15.lastElementChild.innerText = '';  
+    }
+
+    if(myward.value === ''){
+        myward.style.border = '2px solid #ff3860';
+        error16.lastElementChild.innerText = 'Select LC/Ward'; 
+    }else{
+        myward.style.border = '2px solid #09c372';
+        error16.lastElementChild.innerText = '';   
+    }
+
+    if(horticulture.checked){
+        valid = true;
+    }else if(dairy.checked){
+        valid = true;
+    }else if(poultry.checked){
+        valid = true
+    }
+    if(valid){
+        error17.lastElementChild.innerText = ''
+    }else{
+        error17.lastElementChild.innerText = 'choose an activity'
+    }
+
+
     }
 
 
